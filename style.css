@@ -1,24 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400&display=swap");
+* {
+  transition: 500ms;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: #9fbfc4;
   overflow: hidden;
 }
 
 .bg {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
+  position: absolute;
   height: 100vh;
-  background: linear-gradient(180deg, #f0ebd8, #9fbfc4 30%, #293a4c);
+  width: 100vw;
+  background: #9fbfc4;
+  overflow: hidden;
 }
 
-img {
+/*.pic{
+  position:absolute;
+  width:150vw;
+  height:150vh;
+  bottom:-50vh;
+  right:-50ww;
+  border:1px solid;
+  background-image:url("");
+  background-attachment: scroll;
+  background-size: auto;
+}*/
+.bottle {
   position: absolute;
   width: auto;
-  height: 100vh;
-  top: 0;
-  right: 0;
+  height: 280vh;
+  bottom: -30vh;
+  right: -165vh;
+}
+
+.people {
+  position: absolute;
+  width: auto;
+  height: 50vh;
+  bottom: -5vh;
+  right: 10vh;
+}
+
+svg {
+  position: absolute;
+  width: 60vh;
+  height: auto;
+  top: 20vh;
+  left: 15vh;
 }
 
 .enter {
@@ -29,16 +61,64 @@ img {
   width: 30vh;
   height: 10vh;
   top: 70vh;
-  left: 25vw;
+  left: 15vh;
+  transform: translate(-50%);
+  background: rgba(240, 235, 216, 0.3);
+  border: 0.25vh solid #9fbfc4;
+  border-radius: 2vh;
+  /*box-shadow:0vw 0vw 3vh $cream_1; */
+  font-family: "Play", sans-serif;
+  font-size: 5vh;
+  color: #f0ebd8;
+}
+.enter:hover {
   background: none;
   border: 0.25vh solid #f0ebd8;
-  border-radius: 2vw;
-  box-shadow: 0vw 0vw 3vh rgba(240, 235, 216, 0.3);
 }
 
 a {
-  color: #f0ebd8;
   text-decoration: none;
-  font-size: 5vw;
+  color: #f0ebd8;
   text-shadow: 0vw 0vw 3vh rgba(240, 235, 216, 0.3);
+}
+
+/*--rwd--*/
+@media (max-width: 1000px) {
+  .bottle {
+    height: 160vh;
+    bottom: -15vh;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .people {
+    height: 35vh;
+    bottom: -2.5vh;
+    left: 53%;
+    transform: translate(-50%);
+  }
+
+  svg {
+    width: 40vh;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .enter {
+    width: 20vh;
+    height: 10vh;
+    top: 36vh;
+    left: 42%;
+    border: 0.15vh solid #9fbfc4;
+    border-radius: 1.5vh;
+    /*box-shadow:0vw 0vw 3vh $cream_1; */
+    font-size: 4vh;
+    color: #f0ebd8;
+  }
+}
+@media (max-width: 400px) {
+  .enter {
+    left: 34%;
+  }
 }
