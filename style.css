@@ -13,8 +13,6 @@ body {
   position: absolute;
   width: 100vw;
   height: 500vh;
-  /*background: $cream;*/
-  /*background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);*/
   background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
   padding: 0;
   margin: 0;
@@ -22,7 +20,18 @@ body {
   left: 0;
 }
 
-.under_sea {
+.rock {
+  position: absolute;
+  width: 210vh;
+  height: 110vh;
+  left: 0;
+  bottom: 0;
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/rock.png);
+  background-size: cover;
+  opacity: 0.5;
+}
+
+#route {
   position: absolute;
   width: 30vh;
   height: 420vh;
@@ -31,30 +40,84 @@ body {
   transform: translate(-50%);
 }
 
-.messege {
+/*-----message-----*/
+.message {
   position: absolute;
   width: 50vh;
   height: 10vh;
+  background: rgba(240, 235, 216, 0.25);
+}
+
+.message.m1 {
   top: 40vh;
   left: -60vh;
-  background: rgba(240, 235, 216, 0.25);
 }
 
-.messege2 {
-  position: absolute;
-  width: 50vh;
-  height: 10vh;
+.message.m2 {
   top: 55vh;
   left: -55vh;
-  background: rgba(240, 235, 216, 0.25);
 }
 
-.b1 {
+.b1,
+.b2,
+.b3,
+.b4,
+.b1top,
+.b2top,
+.b3top,
+.b4top {
   position: absolute;
   width: 50vh;
   height: 60vh;
+  /*border:1px solid;*/
+}
+
+.b1 {
+  /*top: 140vh;
+  left: calc(45% + 20vh);*/
   top: 70vh;
   left: 30vh;
+}
+
+.b2 {
+  /*top: 200vh;
+  left: calc(45% - 60vh);*/
+  top: 120vh;
+  left: -50vh;
+}
+
+.b3 {
+  /*top: 260vh;
+  left: calc(45% + 20vh);*/
+  top: 170vh;
+  left: 30vh;
+}
+
+.b4 {
+  /*top: 320vh;
+  left: calc(45% - 60vh);*/
+  top: 220vh;
+  left: -50vh;
+}
+
+.b1top {
+  top: 150vh;
+  left: calc(47.5% + 15vh);
+}
+
+.b2top {
+  top: 200vh;
+  left: calc(47.5% - 65vh);
+}
+
+.b3top {
+  top: 250vh;
+  left: calc(47.5% + 15vh);
+}
+
+.b4top {
+  top: 300vh;
+  left: calc(47.5% - 65vh);
 }
 
 .floor {
@@ -62,26 +125,87 @@ body {
   width: 20vh;
   height: 10vh;
   top: 0;
-  left: 0;
   background: #f0ebd8;
+  font-family: "Monda", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  line-height: 10vh;
 }
 
-.pic {
+.floor.f_left {
+  right: 0;
+}
+
+.floor.f_right {
+  left: 0;
+}
+
+.pic,
+.water {
   position: absolute;
   width: 40vh;
   height: 40vh;
   top: 15vh;
-  left: 5vh;
-  background: #f0ebd8;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1vh solid #f0ebd8;
 }
-.pic::before {
+
+.pic {
+  /*background: $cream;*/
+  box-shadow: 0vh 1vh 5vh #f0ebd8 inset;
+}
+
+.pic.p_left::before {
+  content: "";
+  position: absolute;
+  width: 5vh;
+  height: 2vh;
+  top: 0;
+  right: -5vh;
+  background: #ffffff;
+}
+
+.pic.p_right::before {
   content: "";
   position: absolute;
   width: 5vh;
   height: 2vh;
   top: 0;
   left: -5vh;
-  background: red;
+  background: #ffffff;
+}
+
+.water {
+  background: #7eabb1;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: -80%;
+  left: -10%;
+  background: rgba(240, 235, 216, 0.25);
+  border-radius: 30% 40% 50% 30%;
+  animation: wave 15s infinite linear;
+}
+
+@keyframes wave {
+  100% {
+    transform: rotate(720deg);
+  }
+}
+.wave2 {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: -80%;
+  left: -10%;
+  background: #ffffff;
+  border-radius: 30% 40% 50% 40%;
+  animation: wave 5s infinite linear;
 }
 
 .more {
@@ -90,8 +214,38 @@ body {
   height: 10vh;
   bottom: 0;
   left: 50%;
-  background: red;
+  background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);
   transform: translate(-50%);
+  border: none;
+  z-index: 1000;
+  border-radius: 2vh;
+  font-family: "Monda", sans-serif;
+}
+
+.icon {
+  position: absolute;
+  width: 40vh;
+  height: 40vh;
+  top: 10vh;
+  left: 42%;
+  transform: translate(-50%);
+  background-size: cover;
+}
+
+.icon.i1 {
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item1.png");
+}
+
+.icon.i2 {
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item2.png");
+}
+
+.icon.i3 {
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item3.png");
+}
+
+.icon.i4 {
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item4.png");
 }
 
 .tunnel {
@@ -114,48 +268,46 @@ body {
   transform: translate(-50%);
 }
 
-.car_bottom {
+.car_bottom,
+.car_top {
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/car_bottom.png");
   background-size: cover;
 }
 
-.people_sea {
-  position: absolute;
-  width: 8vh;
-  height: 15vh;
-  bottom: 2.75vh;
-  left: 50%;
-  transform: translate(-50%);
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/people.png");
-  background-size: cover;
-  opacity: 1;
+.car_bottom {
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/car_bottom.png");
 }
 
 .car_top {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  left: 0;
   background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/car_top.png");
+}
+
+/*-----traveler-----*/
+.traveler {
+  position: absolute;
+  width: 8vh;
+  height: 15vh;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/people.png");
   background-size: cover;
 }
 
-.rock {
-  position: absolute;
-  width: 210vh;
-  height: 110vh;
-  left: 0;
-  bottom: 0;
-  /*transform:translate(-50%);*/
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/rock.png);
-  background-size: cover;
-  opacity: 0.5;
+.traveler.t_top {
+  top: 26vh;
+  left: 77vh;
+  opacity: 1;
+  /*animation:people 10s linear;*/
+  animation: people2 3s linear;
+}
+
+.traveler.t_sea {
+  bottom: 2.75vh;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 1;
 }
 
 .iron {
@@ -200,100 +352,29 @@ body {
   bottom: 0;
 }
 
-/*.item {
-  position: absolute;
-  width: 18vw;
-  height: 15vw;
-  bottom: 30vh;
-  transform: translate(-50%);
-  border-radius:50%;
-  background:$cream_bg;
-  box-shadow:0vh 1vh 5vh $cream_bg;
-}*/
-.item.i1 {
-  left: 20%;
-}
-
-.item.i2 {
-  left: 40%;
-}
-
-.item.i3 {
-  left: 60%;
-}
-
-.item.i4 {
-  left: 80%;
-}
-
-.bobble {
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-size: cover;
-}
-
-/*.bobble.b1{
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item1.png);
-}*/
-/*.bobble.b2{
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item2.png);
-}*/
-/*.bobble.b3{
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item3.png);
-}*/
-/*.bobble.b4{
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item4.png);
-}*/
-/*.boat{
-  position:absolute;
-  width:22vh;
-  height:14vh;
-  top:110vh;
-  right:20vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/boat1.png");
-  background-size: cover;
-  animation: up 2s infinite alternate;
-}*/
-/*.ship{
-  position:absolute;
-  width:35vh;
-  height:24vh;
-  top:110vh;
-  left:30vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/ship.png");
-  background-size: cover;
-  animation: up 2s infinite alternate;
-}*/
 /*-----star-----*/
-.star_r {
+.star {
   position: absolute;
   width: 36vh;
   height: 36vh;
   top: 4vh;
-  right: 0;
   background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/star.png");
   background-size: cover;
+}
+
+.star.s_right {
+  right: 0;
   animation: up 2s infinite alternate;
 }
 
-.star_l {
-  position: absolute;
-  width: 36vh;
-  height: 36vh;
-  top: 4vh;
+.star.s_left {
   left: 0;
   transform: scalex(-1);
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/star.png");
-  background-size: cover;
   animation: up_star 2s infinite alternate;
 }
 
 /*-----island-----*/
-.island {
+#island {
   position: absolute;
   width: 180vh;
   height: 460vh;
@@ -309,19 +390,8 @@ body {
   top: 0;
   left: 50%;
   transform: translate(-50%);
-  /*background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_all.png");*/
-  background-size: cover;
-}
-
-.shima {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_cut.png");
-  clip-path: polygon(0% 41%, 0% 100%, 100% 100%, 100% 41%);
-  background-size: cover;
+  /*background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_all.png");
+  background-size: cover;*/
 }
 
 .kuruma {
@@ -339,378 +409,225 @@ body {
   background-size: cover;
 }
 
-.nabe_bottom {
+.shima,
+.nabe_bottom,
+.enoki,
+.tofu,
+.shiitake,
+.kani,
+.toumorokoshi,
+.hamaguri,
+.maru,
+.nabe_top,
+.ebi,
+.hana,
+.tako,
+.takoyaki,
+.toudai,
+.shouyu_top {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 30vh;
-  left: -59vh;
   background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_cut.png");
-  clip-path: polygon(66% 0%, 66% 40%, 100% 40%, 100% 0%);
   background-size: cover;
 }
 
+.shima {
+  top: 0;
+  left: 0;
+  clip-path: polygon(0% 41%, 0% 100%, 100% 100%, 100% 41%);
+}
+
+.nabe_bottom {
+  top: 30vh;
+  left: -59vh;
+  clip-path: polygon(66% 0%, 66% 40%, 100% 40%, 100% 0%);
+}
+
 .enoki {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   top: 45vh;
   left: 40vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_cut.png");
   clip-path: polygon(25% 0%, 25% 13%, 34% 13%, 34% 0%);
-  background-size: cover;
   animation: enoki 2.2s infinite alternate;
 }
 
 .tofu {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   top: 22.5vh;
   left: 62.5vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_cut.png");
   clip-path: polygon(18% 11%, 18% 20%, 25% 20%, 25% 11%);
-  background-size: cover;
   animation: tofu 3.6s infinite alternate;
 }
 
 .shiitake {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   top: 25vh;
   left: 62.5vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_cut.png");
   clip-path: polygon(12% 11%, 12% 20%, 18% 20%, 18% 11%);
-  background-size: cover;
   animation: shiitake 2.8s infinite alternate;
 }
 
 .kani {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   top: 22.5vh;
   left: 15vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_cut.png");
   clip-path: polygon(25% 13%, 25% 20%, 35% 20%, 35% 13%);
-  background-size: cover;
   animation: kani 3.2s infinite alternate;
 }
 
 .toumorokoshi {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   top: 30vh;
   left: 32vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_cut.png");
   clip-path: polygon(22% 21%, 22% 30%, 28% 30%, 28% 21%);
-  background-size: cover;
   animation: toumorokoshi 1.4s infinite alternate;
 }
 
 .hamaguri {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   top: 17vh;
   left: 44vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_cut.png");
   clip-path: polygon(18% 21%, 18% 30%, 22% 30%, 22% 21%);
-  background-size: cover;
   animation: hamaguri 4s infinite alternate;
 }
 
 .maru {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   top: 14vh;
   left: 18vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_cut.png");
   clip-path: polygon(23% 30%, 23% 40%, 28% 40%, 28% 30%);
-  background-size: cover;
   animation: maru 1.8s infinite alternate;
 }
 
-.people {
-  position: absolute;
-  width: 8vh;
-  height: 15vh;
-  top: 26vh;
-  left: 77vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/people.png");
-  background-size: cover;
-  opacity: 1;
-  /*animation:people 10s linear;*/
-  animation: people2 3s linear;
-}
-
-@keyframes people2 {
-  0% {
-    top: -37vh;
-  }
-  36% {
-    top: 8vh;
-  }
-}
-.fly {
-  position: absolute;
-  width: 81vh;
-  height: 50vh;
-  /*top: -40vh;
-  left: -130vh;*/
-  top: -70vh;
-  left: 47.5%;
-  transform: translate(-50%);
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/fly.png");
-  background-size: cover;
-  /*animation: fly 8s linear;*/
-  animation: fly2 3s linear;
-}
-
-@keyframes fly2 {
-  0% {
-    top: -70vh;
-  }
-  35% {
-    top: -30vh;
-  }
-  70% {
-    top: -30vh;
-  }
-}
 .nabe_top {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   top: 30vh;
   left: -4vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_cut.png");
   clip-path: polygon(35% 0%, 35% 40%, 66% 40%, 66% 0%);
-  background-size: cover;
-}
-
-.hana {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 27.5vh;
-  left: 61vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_cut.png");
-  clip-path: polygon(13% 28%, 13% 41%, 22% 41%, 22% 28%);
-  background-size: cover;
-  animation: hana 10s infinite;
-}
-
-.sushi1 {
-  position: absolute;
-  width: 6.25vh;
-  height: 8.5vh;
-  top: 73.5vh;
-  left: 43.5vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sushi1.png");
-  background-size: cover;
-  transition: 0.5s;
-}
-.sushi1:hover {
-  transform: translatey(-1vh);
-}
-
-.sushi2 {
-  position: absolute;
-  width: 6.25vh;
-  height: 8.5vh;
-  top: 74.25vh;
-  left: 50vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sushi2.png");
-  background-size: cover;
-  transition: 0.5s;
-}
-.sushi2:hover {
-  transform: translatey(-1vh);
-}
-
-.sushi3 {
-  position: absolute;
-  width: 6.25vh;
-  height: 8.5vh;
-  top: 74.5vh;
-  left: 57vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sushi3.png");
-  background-size: cover;
-  transition: 0.5s;
-}
-.sushi3:hover {
-  transform: translatey(-1vh);
-}
-
-.sushi4 {
-  position: absolute;
-  width: 6.25vh;
-  height: 8.5vh;
-  top: 75.25vh;
-  left: 63.75vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sushi4.png");
-  background-size: cover;
-  transition: 0.5s;
-}
-.sushi4:hover {
-  transform: translatey(-1vh);
-}
-
-.rouru_small {
-  position: absolute;
-  width: 6vh;
-  height: 5.5vh;
-  top: 72vh;
-  left: 146.25vh;
-}
-
-.rouru {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/rouru.png");
-  background-size: cover;
-}
-
-#rouru_trigger {
-  position: absolute;
-  width: 7vh;
-  height: 7vh;
-  bottom: -1vh;
-  right: -1vh;
-  opacity: 0;
-}
-#rouru_trigger:hover {
-  cursor: pointer;
-}
-
-.ebi_small {
-  position: absolute;
-  width: 7.5vh;
-  height: 14vh;
-  top: 36.5vh;
-  left: 102vh;
 }
 
 .ebi {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  transform-origin: 60% 0%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/ebi.png");
-  background-size: cover;
-}
-
-#ebi_trigger {
-  position: absolute;
-  width: 10vh;
-  height: 10vh;
-  bottom: -2vh;
-  right: -2vh;
-  opacity: 0;
-}
-#ebi_trigger:hover {
-  cursor: pointer;
-}
-
-#ebi_trigger:checked ~ .ebi {
+  top: 11.75vh;
+  left: 88.75vh;
+  clip-path: polygon(7.5% 26%, 7.5% 44%, 14% 44%, 14% 26%);
+  transform-origin: 10% 30%;
   animation: ebi 2s alternate infinite;
 }
 
+.hana {
+  top: 27.5vh;
+  left: 61vh;
+  clip-path: polygon(13% 28%, 13% 41%, 22% 41%, 22% 28%);
+  animation: hana 10s infinite;
+}
+
+.takoyaki {
+  top: 55.75vh;
+  left: 44vh;
+  clip-path: polygon(0% 0%, 0% 13%, 9% 13%, 9% 0%);
+}
+
+/*-----tako-----*/
 .tako {
-  position: absolute;
-  /*width: 5.5vh;
-  height: 7vh;
-  top: 60.25vh;*/
-  width: 100%;
-  height: 100%;
   top: 48vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_cut.png");
   clip-path: polygon(7% 12%, 7% 21%, 12% 21%, 12% 12%);
-  background-size: cover;
 }
 
 .tako.t1 {
-  /*left: 78.5vh;*/
   left: 65.5vh;
 }
 
 .tako.t2 {
-  /*left: 95.75vh;*/
   left: 82.5vh;
 }
 
-.toudai_small {
-  position: absolute;
-  width: 13vh;
-  height: 18.5vh;
-  top: 62.5vh;
-  left: 21.75vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/toudai_small.png");
-  background-size: cover;
-}
-
-#toudai_trigger {
-  position: absolute;
-  width: 6vh;
-  height: 6vh;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-}
-#toudai_trigger:hover {
-  cursor: pointer;
+/*-----toudai-----*/
+.toudai {
+  top: 51vh;
+  left: 22vh;
+  clip-path: polygon(0% 13%, 0% 34%, 7.5% 34%, 7.5% 13%);
 }
 
 .hikari {
   position: absolute;
   width: 30vh;
   height: 50vh;
-  top: 3vh;
-  left: -15vh;
+  top: 65vh;
+  left: 8vh;
   clip-path: polygon(60% 0, 70% 0%, 100% 100%, 0% 100%);
   transform: rotate(40deg);
   transform-origin: 60% 0%;
   background: linear-gradient(rgba(240, 235, 216, 0.25), rgba(240, 235, 216, 0.01));
-  opacity: 0;
-}
-
-#toudai_trigger:checked ~ .hikari {
-  opacity: 1;
-  transition: 2s;
   animation: hikari 5s alternate infinite;
 }
 
+/*-----shouyu-----*/
 .shouyu {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  width: 11vh;
+  height: 18vh;
+  top: 68.5vh;
+  left: 72vh;
   background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/shouyu.png");
   background-size: cover;
 }
 
-.takoyaki {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 55.75vh;
-  left: 44vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_cut.png");
-  clip-path: polygon(0% 0%, 0% 13%, 9% 13%, 9% 0%);
-  background-size: cover;
+.shouyu:hover ~ .shouyu_top {
+  transition: 0.5s;
+  transform: translatey(-1vh) rotate(-1deg);
 }
 
-/*-----above-----*/
+.shouyu_top {
+  top: 46vh;
+  left: 58.75vh;
+  clip-path: polygon(7% 21%, 7% 26%, 12% 26%, 12% 21%);
+  transform: rotate(18deg);
+  transform-origin: 10% 30%;
+}
+
+.rouru {
+  position: absolute;
+  width: 6vh;
+  height: 5.5vh;
+  top: 72vh;
+  left: 146.25vh;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/rouru.png");
+  background-size: cover;
+  transition: 0.5s;
+}
+.rouru:hover {
+  transform: translatey(-1vh);
+}
+
+/*-----sushi-----*/
+.sushi {
+  position: absolute;
+  width: 6.25vh;
+  height: 8.5vh;
+  background-size: cover;
+  transition: 0.5s;
+}
+.sushi:hover {
+  transform: translatey(-1vh);
+}
+
+.sushi.s1 {
+  top: 73.5vh;
+  left: 43.5vh;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sushi1.png");
+}
+
+.sushi.s2 {
+  top: 74.25vh;
+  left: 50vh;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sushi2.png");
+}
+
+.sushi.s3 {
+  top: 74.5vh;
+  left: 57vh;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sushi3.png");
+}
+
+.sushi.s4 {
+  top: 75.25vh;
+  left: 63.75vh;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sushi4.png");
+}
+
 .logo {
   position: absolute;
   width: 60vh;
@@ -721,6 +638,18 @@ body {
   background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/logo.svg");
   background-size: cover;
   animation: logo 2s infinite alternate;
+}
+
+.fly {
+  position: absolute;
+  width: 81vh;
+  height: 50vh;
+  top: -70vh;
+  left: 47.5%;
+  transform: translate(-50%);
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/fly.png");
+  background-size: cover;
+  animation: fly2 3s linear;
 }
 
 /*-----menu-----*/
@@ -734,22 +663,6 @@ body {
   border-right: 0.25vh solid #fff;
 }
 
-/*.arrow{
-  position:absolute;
-  width:5vh;
-  height:10vh;
-  background:$cream;
-clip-path: polygon(44% 10%, 44% 90%, 70% 70%, 50% 70%, 50% 10%);
-  top:72.5vh;
-  left:50%;
-  transform:translate(-50%);
-  animation:arrow 2s alternate infinite linear;
-}*/
-/*@keyframes arrow{
-    0% {
-      top:74vh;
-  }
-}*/
 .menu_bg {
   position: absolute;
   /*background: $cream;*/
@@ -893,6 +806,10 @@ a {
   background-size: cover;
 }
 
+.none {
+  display: none;
+}
+
 /*-----animation-----*/
 @keyframes line {
   0% {
@@ -1028,5 +945,24 @@ a {
 @keyframes ebi {
   0% {
     transform: rotate(-5deg);
+  }
+}
+@keyframes people2 {
+  0% {
+    top: -37vh;
+  }
+  36% {
+    top: 8vh;
+  }
+}
+@keyframes fly2 {
+  0% {
+    top: -70vh;
+  }
+  35% {
+    top: -30vh;
+  }
+  70% {
+    top: -30vh;
   }
 }

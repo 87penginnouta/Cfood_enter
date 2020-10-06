@@ -2,146 +2,201 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <title>CodePen - o-&lt;-&lt; [WIP]</title>
   <link rel="stylesheet" href="./style.css">
-  <title>味補鮮知 - 海鮮的秘密</title>
-  <LINK REL="SHORTCUT ICON" href="https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/favicon1.ico">
-    <meta name-"Description" conetnt="｜頭足｜貝類｜魚類｜蝦類｜從辨識、挑貨技巧、食材處理至相關美食，滿滿海鮮小知識等你來挖掘。"／>
 
 </head>
-
+<body>
 <!-- partial:index.partial.html -->
-
+<head>
+  <title>味補鮮知 - 海鮮的秘密</title>
+  <link REL="SHORTCUT ICON" href="https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/favicon1.ico">
+  <meta name="Description" conetnt="海鮮大揭密，圖文x遊戲x社群，從辨識、挑貨技巧、食材處理至相關美食，一起來場水中探險。">
+</head>
 
 <body>
   <div id="bg">
     <div class="rock"></div>
-    <div class="under_sea">
-      <div class="messege" data-0="transform:translatey(30vh);" data-400="transform:translatey(30vh);" data-500="transform:translatey(-10vh);"></div>
-      <div class="messege2" data-0="transform:translatey(30vh);" data-400="transform:translatey(30vh);" data-500="transform:translatey(-10vh);"></div>
+
+    <div id="route">
+
+      <div class="message m1" data-0="transform:translatey(30vh);" data-400="transform:translatey(30vh);" data-500="transform:translatey(-10vh);"></div>
+      <div class="message m2" data-0="transform:translatey(30vh);" data-400="transform:translatey(30vh);" data-500="transform:translatey(-10vh);"></div>
+
       <div class="b1">
-        <div class="floor"></div>
-        <div class="pic"></div>
-        <div class="more"></div>
+        <div class="floor f_right">B1</div>
+        <div class="water">
+          <div class="wave"></div>
+          <div class="wave2"></div>
+        </div>
+        <div class="pic p_right"></div>
+        <input type="button" class="more">
       </div>
+
+      <div class="b2">
+        <div class="floor f_left">B2</div>
+        <div class="water">
+          <div class="wave"></div>
+          <div class="wave2"></div>
+        </div>
+        <div class="pic p_left"></div>
+        <input type="button" class="more">
+      </div>
+
+      <div class="b3">
+        <div class="floor f_right">B3</div>
+        <div class="water">
+          <div class="wave"></div>
+          <div class="wave2"></div>
+        </div>
+        <div class="pic p_right"></div>
+        <input type="button" class="more">
+      </div>
+
+      <div class="b4">
+        <div class="floor f_left">B4</div>
+        <div class="water">
+          <div class="wave"></div>
+          <div class="wave2"></div>
+        </div>
+        <div class="pic p_left"></div>
+        <input type="button" class="more">
+      </div>
+
       <div class="tunnel">
         <div class="car" data-0="transform:translatey(-10vh);" data-300="transform:translatey(-10vh);" data-1200="transform:translatey(120vh);" data-1800="transform:translatey(220vh);" data-2000="transform:translatey(270vh);" data-2200="transform:translatey(300vh);" data-2400="transform:translatey(323vh);" data-3400="transform:translatey(323vh);">
           <div class="car_bottom"></div>
-          <div class="people_sea"></div>
+          <div class="traveler t_sea"></div>
           <div class="car_top"></div>
         </div>
       </div>
       <div class="iron"></div>
     </div>
+
     <div class="sand"></div>
     <div class="grass"></div>
 
     <div class="sea"></div>
 
-    <div class="item i1">
-      <div class="bobble b1"> </div>
+    <div class="b1top">
+      <div class="icon i1"></div>
+      <input type="button" class="more" value="MORE" onclick="location.href='https://fishdb.sinica.edu.tw/seafoodguide/index.html'">
     </div>
-    <div class="item i2">
-      <div class="bobble b2"> </div>
+
+    <div class="b2top">
+      <div class="icon i2"></div>
+      <input type="button" class="more" value="MORE" onclick="location.href='https://ncyu.ebook.hyread.com.tw/bookDetail.jsp?id=90397'">
     </div>
-    <div class="item i3">
-      <div class="bobble b3"> </div>
+
+    <div class="b3top">
+      <div class="icon i3"></div>
+      <input type="button" class="more" value="MORE" onclick="location.href='https://topic.cw.com.tw/2017slowfish/#firstPage">
     </div>
-    <div class="item i4">
-      <div class="bobble b4"> </div>
+
+    <div class="b4top">
+      <div class="icon i4"></div>
+      <input type="button" class="more" value="MORE" onclick="location.href='https://tip.railway.gov.tw/tra-tip-web/tip/tip001/tip112/gobytime'">
     </div>
+
+    <div class="star s_right"></div>
+    <div class="star s_left"></div>
+
+    <div id="island">
+      <div class="land">
+
+        <div class="shima"></div>
+        <div class="kuruma"></div>
+        <div class="nabe_bottom"></div>
+
+        <div class="enoki"></div>
+        <div class="tofu"></div>
+        <div class="shiitake"></div>
+        <div class="kani"></div>
+        <div class="toumorokoshi"></div>
+        <div class="hamaguri"></div>
+        <div class="maru"></div>
+
+        <div class="logo"></div>
+        <div class="fly"></div>
+        <div class="traveler t_top" data-0="transform:translatey(0px); opacity:1;" data-200="transform:translatey(150px); opacity:1;" data-300="transform:translatey(150px); opacity:0.5;" data-400="transform:translatey(150px); opacity:0;"></div>
+
+        <div class="nabe_top"></div>
+        <div class="ebi"></div>
+        <div class="hana"></div>
+        <div class="takoyaki"></div>
+
+        <div class="sign"></div>
+
+        <div class="tako t1"></div>
+        <div class="tako t2"></div>
+
+        <div class="hikari"></div>
+        <div class="toudai"></div>
+
+        <div class="shouyu"></div>
+        <div class="shouyu_top"></div>
+
+        <div class="rouru"></div>
+
+        <div class="sushi s1"></div>
+        <div class="sushi s2"></div>
+        <div class="sushi s3"></div>
+        <div class="sushi s4"></div>
+
+      </div>
+    </div>
+
+    <div id="menu">
+      <div class="hamburger">
+
+        <input id="toggle" type="checkbox" />
+        <span class="menu_bg">
+          <ul id="menu_link">
+            <a href="#">
+              <li class="big">首頁<span class="m">Home</span></li>
+            </a>
+            <a href="#">
+              <li class="small">頭足<span class="m">Cephalopoda</span></li>
+            </a>
+            <a href="#">
+              <li class="small">貝類<span class="m">Shellfish</span></li>
+            </a>
+            <a href="#">
+              <li class="small">魚類<span class="m">Fish</span></li>
+            </a>
+            <a href="#">
+              <li class="small">蝦類<span class="m">Shrimp</span></li>
+            </a>
+            <a href="#">
+              <li class="big">遊戲<span class="m">Game</span></li>
+            </a>
+            <a href="#">
+              <li class="big">關於<span class="m">About</span></li>
+            </a>
+          </ul>
+          <div class="boat_menu"></div>
+        </span>
+        <span class="text">MENU</span>
+        <label for="toggle" class="la">
+          <svg class="ham hamRotate" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+          </svg>
+        </label>
+
+      </div>
+
+    </div>
+
+    <div id="loading" class="loading">
+      <p>内容加载中</p>
+      <p>3秒后消失</p>
+    </div>
+    <!--实际网页内容-->
+    <div id="page" class="page none">我是网页内容</div>
   </div>
 
-  <div class="star_r"></div>
-  <div class="star_l"></div>
-
-  <div class="island">
-    <div class="land">
-      <div class="shima"></div>
-      <div class="kuruma"></div>
-      <div class="nabe_bottom"></div>
-      <div class="enoki"></div>
-      <div class="tofu"></div>
-      <div class="shiitake"></div>
-      <div class="kani"></div>
-      <div class="toumorokoshi"></div>
-      <div class="hamaguri"></div>
-      <div class="maru"></div>
-      <div class="logo"></div>
-      <div class="fly"></div>
-      <div class="people" data-0="transform:translatey(0px); opacity:1;" data-200="transform:translatey(150px); opacity:1;" data-300="transform:translatey(150px); opacity:0.5;" data-400="transform:translatey(150px); opacity:0;"></div>
-      <div class="nabe_top"></div>
-      <div class="sign"></div>
-      <div class="hana"></div>
-      <div class="toudai"></div>
-      <div class="shouyu"></div>
-      <div class="takoyaki"></div>
-      <div class="sushi1"></div>
-      <div class="sushi2"></div>
-      <div class="sushi3"></div>
-      <div class="sushi4"></div>
-      <div class="rouru_small">
-        <input id="rouru_trigger" type="checkbox">
-        <span class="rouru"></span>
-      </div>
-      <div class="ebi_small">
-        <input id="ebi_trigger" type="checkbox">
-        <span class="ebi"></span>
-      </div>
-      <div class="tako t1"></div>
-      <div class="tako t2"></div>
-      <div class="toudai_small">
-        <input id="toudai_trigger" type="checkbox">
-        <span class="hikari"></span>
-      </div>
-    </div>
-  </div>
-
-  <div class="boat"></div>
-  <div class="ship"></div>
-
-  <div id="menu">
-    <div class="arrow"></div>
-    <div class="hamburger">
-
-      <input id="toggle" type="checkbox" />
-      <span class="menu_bg">
-        <ul id="menu_link">
-          <a href="#">
-            <li class="big">首頁<span class="m">Home</span></li>
-          </a>
-          <a href="#">
-            <li class="small">頭足<span class="m">Cephalopoda</span></li>
-          </a>
-          <a href="#">
-            <li class="small">貝類<span class="m">Shellfish</span></li>
-          </a>
-          <a href="#">
-            <li class="small">魚類<span class="m">Fish</span></li>
-          </a>
-          <a href="#">
-            <li class="small">蝦類<span class="m">Shrimp</span></li>
-          </a>
-          <a href="#">
-            <li class="big">遊戲<span class="m">Game</span></li>
-          </a>
-          <a href="#">
-            <li class="big">關於<span class="m">About</span></li>
-          </a>
-        </ul>
-        <div class="boat_menu"></div>
-      </span>
-      <span class="text">MENU</span>
-      <label for="toggle" class="la">
-        <svg class="ham hamRotate" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
-          <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-          <path class="line middle" d="m 30,50 h 40" />
-          <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-        </svg>
-      </label>
-
-    </div>
-
-  </div>
 </body>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
