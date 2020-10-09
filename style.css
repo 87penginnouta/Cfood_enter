@@ -1,18 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
-
-$cream: #f0ebd8;
-$cream_bg: rgba(240, 235, 216, 0.25);
-$cream_c: rgba(240, 235, 216, 0.01);
-
-$fish: #9fbfc4;
-$fish_dark: #7eabb1;
 /*$fish_bg: rgba(159, 191, 196, 0.25);*/
-$fish_bg: rgba(107, 238, 255, 0.25);
-$fish_sea: rgba(56, 99, 105, 0.75);
-
-$white: #ffffff;
-
 * {
   /*border: 1px solid;*/
 }
@@ -53,12 +41,11 @@ body {
 }
 
 /*-----message-----*/
-
 .message {
   position: absolute;
   width: 50vh;
   height: 10vh;
-  background: $cream_bg;
+  background: rgba(240, 235, 216, 0.25);
 }
 
 .message.m1 {
@@ -138,7 +125,7 @@ body {
   width: 20vh;
   height: 10vh;
   top: 0;
-  background: $cream;
+  background: #f0ebd8;
   font-family: "Monda", sans-serif;
   font-size: 22px;
   text-align: center;
@@ -161,41 +148,36 @@ body {
   top: 15vh;
   left: 50%;
   transform: translate(-50%);
-  border: 1vh solid $cream;
+  border: 1vh solid #f0ebd8;
 }
 
 .pic {
   /*background: $cream;*/
-
-  box-shadow: 0vh 1vh 5vh $cream inset;
+  box-shadow: 0vh 1vh 5vh #f0ebd8 inset;
 }
 
-.pic.p_left {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 5vh;
-    height: 2vh;
-    top: 0;
-    right: -5vh;
-    background: $white;
-  }
+.pic.p_left::before {
+  content: "";
+  position: absolute;
+  width: 5vh;
+  height: 2vh;
+  top: 0;
+  right: -5vh;
+  background: #ffffff;
 }
 
-.pic.p_right {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 5vh;
-    height: 2vh;
-    top: 0;
-    left: -5vh;
-    background: $white;
-  }
+.pic.p_right::before {
+  content: "";
+  position: absolute;
+  width: 5vh;
+  height: 2vh;
+  top: 0;
+  left: -5vh;
+  background: #ffffff;
 }
 
 .water {
-  background: $fish_dark;
+  background: #7eabb1;
   overflow: hidden;
 }
 
@@ -205,7 +187,7 @@ body {
   height: 120%;
   top: -80%;
   left: -10%;
-  background: $cream_bg;
+  background: rgba(240, 235, 216, 0.25);
   border-radius: 30% 40% 50% 30%;
   animation: wave 15s infinite linear;
 }
@@ -215,14 +197,13 @@ body {
     transform: rotate(720deg);
   }
 }
-
 .wave2 {
   position: absolute;
   width: 120%;
   height: 120%;
   top: -80%;
   left: -10%;
-  background: $white;
+  background: #ffffff;
   border-radius: 30% 40% 50% 40%;
   animation: wave 5s infinite linear;
 }
@@ -274,8 +255,8 @@ body {
   top: 0;
   left: 50%;
   transform: translate(-50%);
-  background: $cream_bg;
-  box-shadow: 0vh 1vh 7vh $cream;
+  background: rgba(240, 235, 216, 0.25);
+  box-shadow: 0vh 1vh 7vh #f0ebd8;
 }
 
 .car {
@@ -306,7 +287,6 @@ body {
 }
 
 /*-----traveler-----*/
-
 .traveler {
   position: absolute;
   width: 8vh;
@@ -365,7 +345,7 @@ body {
 
 .sea {
   position: absolute;
-  background: linear-gradient($cream_bg 20%, $fish_sea 30%);
+  background: linear-gradient(rgba(240, 235, 216, 0.25) 20%, rgba(56, 99, 105, 0.75) 30%);
   width: 100%;
   height: 500vh;
   left: 0;
@@ -381,13 +361,10 @@ body {
   /*opacity: 0.5;*/
   z-index: 2000;
   /*border:1vh solid $cream;*/
-  box-shadow: 0vh 1vh 5vh $cream_bg;
+  box-shadow: 0vh 1vh 5vh rgba(240, 235, 216, 0.25);
 }
 
-
-
 /*-----star-----*/
-
 .star {
   position: absolute;
   width: 36vh;
@@ -409,7 +386,6 @@ body {
 }
 
 /*-----island-----*/
-
 #island {
   position: absolute;
   width: 180vh;
@@ -557,7 +533,6 @@ body {
 }
 
 /*-----tako-----*/
-
 .tako {
   top: 48vh;
   clip-path: polygon(7% 12%, 7% 21%, 12% 21%, 12% 12%);
@@ -572,7 +547,6 @@ body {
 }
 
 /*-----toudai-----*/
-
 .toudai {
   top: 51vh;
   left: 22vh;
@@ -588,12 +562,11 @@ body {
   clip-path: polygon(60% 0, 70% 0%, 100% 100%, 0% 100%);
   transform: rotate(40deg);
   transform-origin: 60% 0%;
-  background: linear-gradient($cream_bg, $cream_c);
+  background: linear-gradient(rgba(240, 235, 216, 0.25), rgba(240, 235, 216, 0.01));
   animation: hikari 5s alternate infinite;
 }
 
 /*-----shouyu-----*/
-
 .shouyu {
   position: absolute;
   width: 11vh;
@@ -626,24 +599,21 @@ body {
   background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/rouru.png");
   background-size: cover;
   transition: 0.5s;
-
-  &:hover {
-    transform: translatey(-1vh);
-  }
+}
+.rouru:hover {
+  transform: translatey(-1vh);
 }
 
 /*-----sushi-----*/
-
 .sushi {
   position: absolute;
   width: 6.25vh;
   height: 8.5vh;
   background-size: cover;
   transition: 0.5s;
-
-  &:hover {
-    transform: translatey(-1vh);
-  }
+}
+.sushi:hover {
+  transform: translatey(-1vh);
 }
 
 .sushi.s1 {
@@ -680,11 +650,11 @@ body {
   background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/logo.svg");
   background-size: cover;
   animation: logo 2s infinite alternate;
-  text-indent:101%;
+  text-indent: 101%;
   /*使文字的縮排增多至超出區域*/
-  white-space:nowrap;
+  white-space: nowrap;
   /*使文字不能進行換行，避免字數過多時自動換行*/
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .fly {
@@ -700,7 +670,6 @@ body {
 }
 
 /*-----menu-----*/
-
 #menu {
   position: fixed;
   width: 15vh;
@@ -749,7 +718,7 @@ body {
 }
 
 #toggle:checked ~ .text {
-  color: $fish_dark;
+  color: #7eabb1;
   transition: 1s;
 }
 
@@ -776,7 +745,7 @@ body {
 .line {
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: $cream;
+  stroke: #f0ebd8;
   stroke-width: 3.5;
   stroke-linecap: round;
   animation: line 1s infinite linear alternate;
@@ -785,12 +754,15 @@ body {
 .ham .top {
   stroke-dasharray: 40 139;
 }
+
 .ham .bottom {
   stroke-dasharray: 40 180;
 }
+
 .ham.active .top {
   stroke-dashoffset: -98px;
 }
+
 .ham.active .bottom {
   stroke-dashoffset: -138px;
 }
@@ -806,12 +778,11 @@ body {
   /*font-family: 'Barlow Condensed', sans-serif;*/
   /*font-family: 'Teko', sans-serif;*/
   font-family: "Monda", sans-serif;
-  color: $cream;
+  color: #f0ebd8;
   font-size: 1vh;
 }
 
 /*-----menu_open-----*/
-
 ul {
   position: absolute;
   top: 50%;
@@ -826,19 +797,19 @@ a {
 
 .big {
   padding: 4vh;
-  color: $fish_dark;
+  color: #7eabb1;
   font-family: "微軟正黑體";
 }
 
 .small {
   padding: 4vh;
-  color: $fish_dark;
+  color: #7eabb1;
   font-family: "微軟正黑體";
 }
 
 .m {
   font-family: "Monda", sans-serif;
-  color: $fish;
+  color: #9fbfc4;
   font-size: 1vh;
 }
 
@@ -857,16 +828,14 @@ a {
 }
 
 /*-----animation-----*/
-
 @keyframes line {
   0% {
-    stroke: $cream;
+    stroke: #f0ebd8;
   }
   100% {
-    stroke: $fish_dark;
+    stroke: #7eabb1;
   }
 }
-
 @keyframes logo {
   0% {
     transform: translate(-50%, -50%) rotate(2deg);
@@ -875,7 +844,6 @@ a {
     transform: translate(-50%, -50%) rotate(0deg);
   }
 }
-
 @keyframes fly {
   0% {
     transform: translatex(0);
@@ -884,61 +852,51 @@ a {
     transform: translatex(300vh);
   }
 }
-
 @keyframes up {
   0% {
     transform: translatey(1.5vh);
   }
 }
-
 @keyframes up_star {
   0% {
     transform: translatey(1.5vh) scalex(-1);
   }
 }
-
 @keyframes enoki {
   0% {
     transform: translatey(2.2vh);
   }
 }
-
 @keyframes tofu {
   0% {
     transform: translatey(1.2vh);
   }
 }
-
 @keyframes shiitake {
   0% {
     transform: translatey(1.6vh);
   }
 }
-
 @keyframes kani {
   0% {
     transform: translatey(1.4vh);
   }
 }
-
 @keyframes toumorokoshi {
   0% {
     transform: translatey(3.4vh);
   }
 }
-
 @keyframes hamaguri {
   0% {
     transform: translatey(0.8vh);
   }
 }
-
 @keyframes maru {
   0% {
     transform: translatey(2vh);
   }
 }
-
 @keyframes people {
   0% {
     left: -40vh;
@@ -982,7 +940,6 @@ a {
     transform: translatey(1vh);
   }
 }
-
 @keyframes hana {
   0% {
     transform: translatey(0px);
@@ -994,7 +951,6 @@ a {
     transform: translatey(-8vh);
   }
 }
-
 @keyframes hikari {
   0% {
     transform: rotate(20deg);
@@ -1003,13 +959,11 @@ a {
     transform: rotate(40deg);
   }
 }
-
 @keyframes ebi {
   0% {
     transform: rotate(-5deg);
   }
 }
-
 @keyframes people2 {
   0% {
     top: -37vh;
@@ -1018,7 +972,6 @@ a {
     top: 8vh;
   }
 }
-
 @keyframes fly2 {
   0% {
     top: -70vh;
