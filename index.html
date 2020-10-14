@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180233730-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-180233730-1');
-</script>
-
   <meta charset="UTF-8">
+  <title>CodePen - o-&lt;-&lt; [WIP]</title>
   <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>味補鮮知 - 海鮮的秘密 | 你不可不知的台灣海鮮食魚文化</title>
   <link REL="SHORTCUT ICON" href="https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/favicon1.ico">
   <meta name="Description" content="海鮮大揭密，圖文x遊戲x社群，從辨識、挑貨技巧、食材處理至相關美食，一起來場水中探險。本網站為嘉義大學數位學習設計與管理學系110級畢業專題。">
-  <meta name="robots" content="海鮮, 嘉義大學, 畢業專題, seafood, fish, shrimp" />
+  <meta name="robots" content="index, follow" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -25,63 +22,45 @@
       "logo": "https://raw.githubusercontent.com/87penginnouta/Cfood_enter/a72e8c957d991dc75e114e07b7c05da2a5f43517/logo.svg"
     }
   </script>
-
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-
-
-
   <div id="bg">
     <div class="rock"></div>
 
     <div id="route">
 
-      <div class="message m1" data-0="transform:translatey(30vh);" data-400="transform:translatey(30vh);" data-500="transform:translatey(-10vh);"></div>
-      <div class="message m2" data-0="transform:translatey(30vh);" data-400="transform:translatey(30vh);" data-500="transform:translatey(-10vh);"></div>
+      <!--<div class="message m1" data-0="transform:translatey(30vh);" data-400="transform:translatey(30vh);" data-500="transform:translatey(-10vh);"></div>
+      <div class="message m2" data-0="transform:translatey(30vh);" data-400="transform:translatey(30vh);" data-500="transform:translatey(-10vh);"></div>-->
+      <div class="message m1"></div>
+      <div class="message m2"></div>
 
       <div class="b1">
         <div class="floor f_right">B1</div>
-        <div class="water">
-          <div class="wave"></div>
-          <div class="wave2"></div>
-        </div>
         <div class="pic p_right"></div>
         <input type="button" class="more">
       </div>
 
       <div class="b2">
         <div class="floor f_left">B2</div>
-        <div class="water">
-          <div class="wave"></div>
-          <div class="wave2"></div>
-        </div>
         <div class="pic p_left"></div>
         <input type="button" class="more">
       </div>
 
       <div class="b3">
         <div class="floor f_right">B3</div>
-        <div class="water">
-          <div class="wave"></div>
-          <div class="wave2"></div>
-        </div>
         <div class="pic p_right"></div>
         <input type="button" class="more">
       </div>
 
       <div class="b4">
         <div class="floor f_left">B4</div>
-        <div class="water">
-          <div class="wave"></div>
-          <div class="wave2"></div>
-        </div>
         <div class="pic p_left"></div>
         <input type="button" class="more">
       </div>
 
       <div class="tunnel">
-        <div class="car" data-0="transform:translatey(-10vh);" data-300="transform:translatey(-10vh);" data-1200="transform:translatey(120vh);" data-1800="transform:translatey(220vh);" data-2000="transform:translatey(270vh);" data-2200="transform:translatey(300vh);" data-2400="transform:translatey(323vh);" data-3400="transform:translatey(323vh);">
+        <div class="car" data-0="transform:translatey(-10vh);" data-300="transform:translatey(-10vh);" data-800="transform:translatey(110vh);" data-1000="transform:translatey(135vh);" data-1200="transform:translatey(160vh);" data-1400="transform:translatey(185vh);" data-1600="transform:translatey(210vh);" data-1800="transform:translatey(245vh);" data-2000="transform:translatey(260vh);" data-2025="transform:translatey(285vh);" data-2050="transform:translatey(323vh);">
           <div class="car_bottom"></div>
           <div class="traveler t_sea"></div>
           <div class="car_top"></div>
@@ -95,31 +74,18 @@
 
     <div class="sea"></div>
 
-    <div class="b1top">
-      <div class="icon i1"></div>
-      <input type="button" class="more" value="MORE" onclick="location.href='https://fishdb.sinica.edu.tw/seafoodguide/index.html'">
-    </div>
-
-    <div class="b2top">
-      <div class="icon i2"></div>
-      <input type="button" class="more" value="MORE" onclick="location.href='https://ncyu.ebook.hyread.com.tw/bookDetail.jsp?id=90397'">
-    </div>
-
-    <div class="b3top">
-      <div class="icon i3"></div>
-      <input type="button" class="more" value="MORE" onclick="location.href='https://topic.cw.com.tw/2017slowfish/#firstPage">
-    </div>
-
-    <div class="b4top">
-      <div class="icon i4"></div>
-      <input type="button" class="more" value="MORE" onclick="location.href='https://tip.railway.gov.tw/tra-tip-web/tip/tip001/tip112/gobytime'">
-    </div>
-
-    <div class="fb" data-0="transform:translatex(100vh);" data-3400="transform:translatex(-30vh);"></div>
-
+    <!--<div class="fb" data-0="transform:translatex(100vh);" data-3400="transform:translatex(-30vh);">
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v8.0" nonce="3OkfBtHi"></script>
+      <div class="fb-page" data-href="https://www.facebook.com/Cfood.secret" data-tabs="timeline" data-width="400" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
+        <blockquote cite="https://www.facebook.com/Cfood.secret" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Cfood.secret">味補鮮知 - 海鮮的秘密</a></blockquote>
+      </div>
+    </div>-->
 
     <div class="star s_right"></div>
     <div class="star s_left"></div>
+
+    <h1 class="logo">嘉義大學數位系110級畢業專題</h1>
 
     <div id="island">
       <div class="land">
@@ -136,7 +102,6 @@
         <div class="hamaguri"></div>
         <div class="maru"></div>
 
-        <h1 class="logo">嘉義大學數位系110級畢業專題</h1>
         <div class="fly"></div>
         <div class="traveler t_top" data-0="transform:translatey(0px); opacity:1;" data-200="transform:translatey(150px); opacity:1;" data-300="transform:translatey(150px); opacity:0.5;" data-400="transform:translatey(150px); opacity:0;"></div>
 
@@ -166,37 +131,40 @@
       </div>
     </div>
 
+    <input id="toggle" type="checkbox" />
+    <span class="menu_bg">
+      <ul id="menu_link">
+        <a href="#">
+          <li class="big">首頁<span class="m">Home</span></li>
+        </a>
+        <a href="#">
+          <li class="small">頭足<span class="m">Cephalopoda</span></li>
+        </a>
+        <a href="#">
+          <li class="small">貝類<span class="m">Shellfish</span></li>
+        </a>
+        <a href="#">
+          <li class="small">魚類<span class="m">Fish</span></li>
+        </a>
+        <a href="#">
+          <li class="small">蝦類<span class="m">Shrimp</span></li>
+        </a>
+        <a href="#">
+          <li class="big">遊戲<span class="m">Game</span></li>
+        </a>
+        <a href="#">
+          <li class="big">關於<span class="m">About</span></li>
+        </a>
+      </ul>
+      <div class="boat_menu"></div>
+    </span>
+    
+    <span class="text">MENU</span>
+
     <div id="menu">
       <div class="hamburger">
 
-        <input id="toggle" type="checkbox" />
-        <span class="menu_bg">
-          <ul id="menu_link">
-            <a href="#">
-              <li class="big">首頁<span class="m">Home</span></li>
-            </a>
-            <a href="#">
-              <li class="small">頭足<span class="m">Cephalopoda</span></li>
-            </a>
-            <a href="#">
-              <li class="small">貝類<span class="m">Shellfish</span></li>
-            </a>
-            <a href="#">
-              <li class="small">魚類<span class="m">Fish</span></li>
-            </a>
-            <a href="#">
-              <li class="small">蝦類<span class="m">Shrimp</span></li>
-            </a>
-            <a href="#">
-              <li class="big">遊戲<span class="m">Game</span></li>
-            </a>
-            <a href="#">
-              <li class="big">關於<span class="m">About</span></li>
-            </a>
-          </ul>
-          <div class="boat_menu"></div>
-        </span>
-        <span class="text">MENU</span>
+        
         <label for="toggle" class="la">
           <svg class="ham hamRotate" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
             <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
@@ -209,8 +177,27 @@
 
     </div>
 
-  </div>
+    <div class="b1top">
+      <div class="icon i1"></div>
+      <input type="button" class="more" value="MORE" onclick="location.href='https://fishdb.sinica.edu.tw/seafoodguide/index.html'">
+    </div>
 
+    <div class="b2top">
+      <div class="icon i2"></div>
+      <input type="button" class="more" value="MORE" onclick="location.href='https://ncyu.ebook.hyread.com.tw/bookDetail.jsp?id=90397'">
+    </div>
+
+    <div class="b3top">
+      <div class="icon i3"></div>
+      <input type="button" class="more" value="MORE" onclick="location.href='https://topic.cw.com.tw/2017slowfish/#firstPage">
+    </div>
+
+    <div class="b4top">
+      <div class="icon i4"></div>
+      <input type="button" class="more" value="MORE" onclick="location.href='https://tip.railway.gov.tw/tra-tip-web/tip/tip001/tip112/gobytime'">
+    </div>
+  </div>
+</body>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
