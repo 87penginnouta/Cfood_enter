@@ -1,8 +1,15 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
-/*$fish_bg: rgba(159, 191, 196, 0.25);*/
 * {
   /*border: 1px solid;*/
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -17,8 +24,15 @@ body {
   width: 100vw;
   height: 100vh;
   background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);
+  opacity: 0;
+  animation: loading 3s linear;
 }
 
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+}
 .loading_content {
   position: absolute;
   width: 30vh;
@@ -39,15 +53,31 @@ body {
   transform: translate(-50%, -50%);
   background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/icoooo.png);
   background-size: cover;
+  animation: ico 3s linear;
+  transform-origin: 30% 30%;
 }
 
+@keyframes ico {
+  0% {
+    transform: translate(-50%, -50%) rotatey(0deg);
+  }
+  20% {
+    transform: translate(-50%, -50%) rotatey(90deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotatey(0deg);
+  }
+  70% {
+    transform: translate(-50%, -50%) rotatey(90deg);
+  }
+}
 .word_lo {
   position: absolute;
   font-size: 4vh;
   top: 50%;
   color: #7eabb1;
   /*font-family:PingFang SC;*/
-  font-family: 微軟正黑體;
+  font-family: "微軟正黑體";
   transform: translate(-50%, -50%);
 }
 
@@ -72,10 +102,11 @@ body {
   width: 100vw;
   height: 500vh;
   background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
+  /*background: $blue;*/
   padding: 0;
   margin: 0;
   top: 0;
-  left: 0;
+  right: 0;
   overflow: hidden;
   /*overflow-y: scroll;*/
   opacity: 1;
@@ -93,310 +124,334 @@ body {
     opacity: 1;
   }
 }
+#section1 {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  /*border: 1px solid;*/
+  top: 0;
+  left: 0;
+}
+
+#section2 {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  /*border: 1px solid;*/
+  top: 40%;
+  left: 0;
+}
+
+#section3 {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  /*border: 1px solid;*/
+  bottom: 0%;
+  left: 0;
+}
+
 .rock {
   position: absolute;
-  width: 210vh;
+  width: 220vh;
   height: 110vh;
   left: 0;
-  bottom: 0;
+  bottom: 1%;
   background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/rock.png);
   background-size: cover;
   opacity: 0.5;
 }
 
-#route {
-  position: absolute;
-  width: 30vh;
-  height: 84%;
-  top: 16%;
-  left: 47.5%;
-  transform: translate(-50%);
-}
-
-/*-----message-----*/
-.message {
-  position: absolute;
-  width: 50vh;
-  height: 10vh;
-  background: rgba(240, 235, 216, 0.25);
-}
-
-.message.m1 {
-  top: 40vh;
-  left: -60vh;
-}
-
-.message.m2 {
-  top: 55vh;
-  left: -55vh;
-}
-
-.b1,
-.b2,
-.b3,
-.b4,
-.b1top,
-.b2top,
-.b3top,
-.b4top {
-  position: absolute;
-  width: 50vh;
-  height: 60vh;
-  opacity: 0.15;
-  /*transition:2s;*/
-}
-
-.b1 {
-  /*top: 140vh;
-  left: calc(45% + 20vh);*/
-  /*top: 70vh;
-  left: 30vh;*/
-}
-
-.b2 {
-  /*top: 200vh;
-  left: calc(45% - 60vh);*/
-  /*top: 120vh;
-  left: -50vh;*/
-}
-
-.b3 {
-  /*top: 260vh;
-  left: calc(45% + 20vh);*/
-  /*top: 170vh;
-  left: 30vh;*/
-}
-
-.b4 {
-  /*top: 320vh;
-  left: calc(45% - 60vh);*/
-  /*top: 220vh;
-  left: -50vh;*/
-}
-
-.b1top {
-  top: 150vh;
-  left: calc(47.5% + 15vh);
-}
-
-.b2top {
-  top: 200vh;
-  left: calc(47.5% - 65vh);
-}
-
-.b3top {
-  top: 250vh;
-  left: calc(47.5% + 15vh);
-}
-
-.b4top {
-  top: 300vh;
-  left: calc(47.5% - 65vh);
-}
-
-.floor {
-  position: absolute;
-  width: 40%;
-  height: 16.6%;
-  top: 0;
-  background: #f0ebd8;
-  font-family: "Monda", sans-serif;
-  font-size: 22px;
-  text-align: center;
-  line-height: 10vh;
-}
-
-.floor.f_left {
-  right: 0;
-}
-.floor.f_left::before {
-  content: "";
-  position: absolute;
-  width: 25%;
-  height: 20%;
-  top: 160%;
-  right: 0;
-  background: #ffffff;
-}
-
-.floor.f_right {
-  left: 0;
-}
-.floor.f_right::before {
-  content: "";
-  position: absolute;
-  width: 25%;
-  height: 20%;
-  top: 160%;
-  left: 0;
-  background: #ffffff;
-}
-
-.pic {
-  position: absolute;
-  width: 80%;
-  height: 83%;
-  top: 15vh;
-  left: 50%;
-  transform: translate(-50%);
-  clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%);
-  background: #f0ebd8;
-}
-
-.more {
-  position: absolute;
-  width: 20vh;
-  height: 10vh;
-  bottom: 0;
-  left: 50%;
-  background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);
-  transform: translate(-50%);
-  border: none;
-  /*z-index: 2;*/
-  border-radius: 2vh;
-  font-family: "Monda", sans-serif;
-  cursor: pointer;
-}
-
-/*.icon {
+.container {
   position: absolute;
   width: 100%;
-  height: 40vh;
-  top: 0;
+  height: 25%;
   left: 0;
-  /*transform: translate(-50%);*/
-  /*background:red;
-  background-size: cover;
-}*/
-/*.icon.i1 {
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item1.png");
+  /*border:1px solid;*/
 }
 
-.icon.i2 {
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item2.png");
-}
-
-.icon.i3 {
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item3.png");
-}
-
-.icon.i4 {
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item4.png");
-}*/
-.tunnel {
-  position: absolute;
-  width: 30vh;
-  height: 300vh;
+.container.c1 {
   top: 0;
-  left: 50%;
-  transform: translate(-50%);
-  background: rgba(240, 235, 216, 0.25);
-  box-shadow: 0vh 1vh 5vh #f0ebd8;
 }
 
-.car {
-  position: absolute;
-  width: 28vh;
-  height: 20.4vh;
-  top: 0;
-  left: 3.5%;
-  transition: 0.05s;
+.container.c2 {
+  top: 25%;
 }
 
-.car_bottom,
-.car_top {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-size: cover;
+.container.c3 {
+  top: 50%;
 }
 
-.car_bottom {
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/car_bottom.png");
-}
-
-.car_top {
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/car_top.png");
+.container.c4 {
+  top: 75%;
 }
 
 /*-----traveler-----*/
 .traveler {
   position: absolute;
-  width: 8vh;
-  height: 15vh;
+  width: 10vh;
+  height: 18.75vh;
   background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/people.png");
   background-size: cover;
 }
 
 .traveler.t_top {
-  top: 26vh;
-  left: 77vh;
+  top: 20%;
+  left: 50%;
   opacity: 1;
+  transform: translate(-50%);
   /*animation:people 10s linear;*/
   animation: people2 3s linear;
 }
 
-.traveler.t_sea {
-  bottom: 2.75vh;
+@keyframes people2 {
+  0% {
+    top: 0%;
+    transform: translate(-50%);
+  }
+  36% {
+    top: 10%;
+    transform: translate(-50%);
+  }
+}
+.traveler.t_un {
+  bottom: 0;
   left: 50%;
   transform: translate(-50%);
+}
+
+.submarine {
+  position: absolute;
+  width: 50vh;
+  height: 36vh;
+  top: 10%;
+  left: 10%;
+  /*transform:translate(-50%);*/
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/submarine.png");
+  background-size: cover;
+}
+
+.bubble,
+.icon {
+  position: absolute;
+  width: 60vh;
+  height: 52vh;
+  background-size: cover;
+}
+
+.bubble {
+  top: 100%;
+  left: 10%;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/bubble.png");
+}
+
+.traveler.t_sea {
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 1;
 }
 
-.iron {
+.icon {
+  top: 0%;
+  /*transform: translate(-50%);*/
+  background-size: cover;
+  opacity: 0.15;
+}
+
+.icon.i1 {
+  left: 60%;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item1_light.png");
+}
+
+.icon.i2 {
+  left: 10%;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item2_light.png");
+}
+
+.icon.i3 {
+  left: 60%;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item3_light.png");
+}
+
+.icon.i4 {
+  left: 10%;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item4_light.png");
+}
+
+.info,
+.content,
+.info_stop,
+.info_final,
+.info_menu {
   position: absolute;
-  width: 46vh;
-  height: 80vh;
-  left: 47.5%;
-  bottom: 0;
-  transform: translate(-50%);
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/iron.png);
+  color: #f0ebd8;
+  font-family: "微軟正黑體";
+  line-height: 1.5;
+  letter-spacing: 0.5vh;
+}
+
+.info {
+  top: 5%;
+  left: 60%;
+  padding-left: 3vh;
+  font-size: 6vh;
+  font-weight: 700;
+  /*background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
+  border-radius:3vh;*/
+}
+.info::before {
+  content: "";
+  position: absolute;
+  width: 4vh;
+  height: 4vh;
+  top: -15%;
+  left: 0%;
+  background: #ffdb02;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.info_stop,
+.info_final,
+.info_menu {
+  top: 5%;
+  padding-left: 3vh;
+  font-size: 6vh;
+  font-weight: 700;
+  /*background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
+  border-radius:3vh;*/
+}
+.info_stop::before,
+.info_final::before,
+.info_menu::before {
+  content: "";
+  position: absolute;
+  width: 6vh;
+  height: 6vh;
+  top: 5%;
+  left: 5%;
+  background: #ffdb02;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.info_stop.i_right {
+  left: 60%;
+}
+
+.info_stop.i_left {
+  left: 10%;
+}
+
+.info_final {
+  left: 10%;
+}
+
+.info_menu {
+  text-decoration: none;
+  transition: 0.25s;
+}
+.info_menu:hover {
+  color: #ffdb02;
+}
+
+.info_menu.i_right {
+  left: 60%;
+}
+
+.info_menu.i_left {
+  left: 30%;
+}
+
+.highlight {
+  color: #ffdb02;
+}
+
+.highlight_stop {
+  color: #ffdb02;
+  font-size: 2vh;
+  font-family: "Monda";
+  letter-spacing: 0vh;
+}
+
+.highlight_number {
+  color: #ffdb02;
+  font-size: 4vh;
+  font-family: "Monda";
+  letter-spacing: 0vh;
+}
+
+.content {
+  font-size: 3vh;
+  font-weight: 700;
+}
+
+.btn {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  bottom: 10%;
+  margin-left: 3vh;
+  /*background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);*/
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
+  font-family: "Monda", sans-serif;
+  font-size: 3vh;
+  color: #f0ebd8;
+  text-align: center;
+  line-height: 250%;
+  box-shadow: 2vh 2vh 2vh rgba(0, 0, 0, 0.15);
+  border-radius: 50vh;
+  transition: 0.25s;
+}
+.btn:hover {
+  box-shadow: 0vh 0vh 0vh rgba(0, 0, 0, 0.15);
+}
+
+.btn.b_left {
+  left: 10%;
+}
+
+.btn.b_right {
+  left: 60%;
+}
+
+.dinner {
+  position: absolute;
+  width: 60vh;
+  height: 60vh;
+  top: 5%;
+  left: 30%;
+  /*border: 1px solid;*/
+}
+
+.broccoli,
+.carrot,
+.salmon {
+  position: absolute;
   background-size: cover;
 }
 
-.sand {
-  position: absolute;
-  width: 220vh;
-  height: 120vh;
-  left: 0;
-  bottom: 0;
-  /*transform:translate(-50%);*/
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sand.png);
-  background-size: cover;
+.broccoli {
+  width: 43%;
+  height: 40%;
+  top: 0;
+  left: 35%;
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/broccoli.png);
 }
 
-.grass {
-  position: absolute;
-  width: 22vh;
-  height: 30vh;
-  left: 16vh;
-  bottom: 3vh;
-  /*transform:translate(-50%);*/
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/grass.png);
-  background-size: cover;
+.carrot {
+  width: 33%;
+  height: 30%;
+  top: 35%;
+  left: 10%;
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/carrot.png);
 }
 
-.sea {
-  position: absolute;
-  background: linear-gradient(rgba(240, 235, 216, 0.25) 20%, rgba(56, 99, 105, 0.75) 30%);
-  width: 100%;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-}
-
-.fb {
-  position: absolute;
-  width: 50vh;
-  height: auto;
-  top: 410vh;
-  right: 10vh;
-  /*opacity: 0.5;*/
-  z-index: 2000;
-  /*border:1vh solid $cream;*/
-  box-shadow: 0vh 1vh 5vh rgba(240, 235, 216, 0.25);
+.salmon {
+  width: 50%;
+  height: 39%;
+  top: 40%;
+  left: 52%;
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/salmon.png);
 }
 
 /*-----star-----*/
@@ -404,18 +459,18 @@ body {
   position: absolute;
   width: 16vw;
   height: 16vw;
-  top: 4vh;
+  top: 4%;
   background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/star.png");
   background-size: cover;
 }
 
 .star.s_right {
-  right: 0;
+  right: 0%;
   animation: up 2s infinite alternate;
 }
 
 .star.s_left {
-  left: 0;
+  left: 0%;
   transform: scalex(-1);
   animation: up_star 2s infinite alternate;
 }
@@ -423,12 +478,84 @@ body {
 /*-----island-----*/
 #island {
   position: absolute;
-  width: 180vh;
-  height: 460vh;
-  top: 15vh;
+  /*width: 90vw;
+  height: 230vw;*/
+  width: 200vh;
+  height: 512vh;
+  /*top: 22.5%;*/
+  top: 10%;
   left: 50%;
   transform: translate(-50%);
-  transition: 1s;
+  /*transition: 1s;*/
+}
+
+.ground {
+  position: absolute;
+  width: 94.4%;
+  height: 20.6%;
+  top: 11%;
+  left: 50%;
+  transform: translate(-50%);
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island-land.png");
+  background-size: cover;
+}
+
+.sea,
+.under_sea {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.sea {
+  height: 80%;
+  top: 70%;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.under_sea {
+  height: 350%;
+  top: 150%;
+  background: rgba(0, 0, 0, 0.3);
+  /*overflow:hidden;*/
+}
+
+.wave1,
+.wave2 {
+  position: absolute;
+  bottom: 0;
+  width: 120%;
+  transform: translate(-50%);
+  background-size: cover;
+}
+
+.wave1 {
+  height: 20%;
+  /*top:130%;*/
+  left: 60%;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/wave-back.png");
+  opacity: 0.5;
+  animation: wave1 3s infinite alternate;
+}
+
+@keyframes wave1 {
+  0% {
+    left: 40%;
+  }
+}
+@keyframes wave2 {
+  0% {
+    left: 60%;
+  }
+}
+.wave2 {
+  height: 30%;
+  /*top:120%;*/
+  left: 40%;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/wave-back_0.png");
+  opacity: 0.25;
+  animation: wave2 3s infinite alternate;
 }
 
 .land {
@@ -681,8 +808,8 @@ body {
   position: absolute;
   width: 60vh;
   height: 28vh;
-  top: 5%;
-  left: 47.5%;
+  top: 20%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/logo.svg");
   background-size: cover;
@@ -692,7 +819,7 @@ body {
   white-space: nowrap;
   /*使文字不能進行換行，避免字數過多時自動換行*/
   overflow: hidden;
-  transition: 1s;
+  /*transition: 1s;*/
 }
 
 .fly {
@@ -707,6 +834,111 @@ body {
   animation: fly2 3s linear;
 }
 
+.sand {
+  position: absolute;
+  width: 220vh;
+  height: 15vh;
+  left: 0;
+  bottom: 0;
+  /*transform:translate(-50%);*/
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/snad.png);
+  background-size: cover;
+}
+
+.copyright {
+  position: absolute;
+  width: 50%;
+  height: 4%;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  font-family: "微軟正黑體";
+  color: #f0ebd8;
+  font-size: 1vh;
+  /*border:1px solid;*/
+}
+
+.grass {
+  position: absolute;
+  width: 15vh;
+  height: 20vh;
+  left: 50%;
+  bottom: 5%;
+  /*transform:translate(-50%);*/
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/grass.png);
+  background-size: cover;
+}
+
+.game {
+  position: absolute;
+  width: 62vh;
+  height: 90vh;
+  bottom: 5%;
+  left: 75%;
+  transform: translate(-50%);
+  /*border:1px solid;*/
+}
+
+.iron,
+.egg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  background-size: cover;
+}
+
+.iron {
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/iron2.png);
+}
+
+.egg {
+  width: 90%;
+  /*height:65%;*/
+  height: 45%;
+  bottom: 35%;
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/egg.png);
+}
+
+.egg_btn {
+  position: absolute;
+  width: 20%;
+  height: 27%;
+  left: 50%;
+  bottom: 15%;
+  transform: translate(-50%, -50%);
+  background: #f0ebd8;
+  border-radius: 50%;
+  box-shadow: 1vh 1vh 5vh #94d0d3;
+  cursor: pointer;
+  animation: shoo 2s infinite ease-in-out;
+}
+.egg_btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f0ebd8;
+  box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.3);
+}
+
+@keyframes shoo {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
 /*-----menu-----*/
 #menu {
   position: fixed;
@@ -715,20 +947,30 @@ body {
   background: none;
   left: 0;
   top: 0;
-  border-right: 0.25vh solid #fff;
+  border-right: 0.25vh solid #f0ebd8;
   -webkit-transform: translateZ(0);
 }
 
 .menu_bg {
   position: fixed;
   /*background: $cream;*/
-  background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);
+  /*background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);*/
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
   width: 120vw;
   height: 100vh;
   left: -150vw;
   /*top: -45vh;*/
   top: 0;
   transition: 1s;
+}
+.menu_bg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  top: 70%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .hamburger {
@@ -762,31 +1004,10 @@ body {
   transition: 1s;
 }
 
-#toggle:checked ~ .text {
-  color: #7eabb1;
+/*#toggle:checked ~ .text {
+  color: $fish_dark;
   transition: 1s;
-}
-
-#toggle:checked ~ .b1top {
-  display: none;
-  transition: 1s;
-}
-
-#toggle:checked ~ .b2top {
-  display: none;
-  transition: 1s;
-}
-
-#toggle:checked ~ .b3top {
-  display: none;
-  transition: 1s;
-}
-
-#toggle:checked ~ .b4top {
-  display: none;
-  transition: 1s;
-}
-
+}*/
 .ham {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -853,44 +1074,111 @@ body {
 }
 
 /*-----menu_open-----*/
-ul {
+/*#menu_link,
+.animal_link {
   position: absolute;
-  top: 50%;
-  left: 45%;
   transform: translate(-50%, -50%);
   list-style: none;
+}*/
+/*#menu_link {
+  left: 50%;
+  top: 70%;
+}*/
+/*.animal_link {
+  top: 30%;
+}*/
+/*.animal_link.a1 {
+  left: 35%;
+}*/
+/*.animal_link.a2 {
+  left: 65%;
+}*/
+.menu_top {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.menu_bottom {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  height: 50%;
 }
 
 a {
   text-decoration: none;
 }
 
-.big {
-  padding: 4vh;
-  color: #7eabb1;
-  font-family: "微軟正黑體";
+.fb, .ig {
+  position: absolute;
+  width: 8vh;
+  height: 8vh;
+  top: 85%;
+  padding-left: 3vh;
 }
 
-.small {
-  padding: 4vh;
-  color: #7eabb1;
-  font-family: "微軟正黑體";
+.fb {
+  left: 60%;
 }
 
-.m {
+.ig {
+  left: 65%;
+}
+
+.about {
+  position: absolute;
+  width: 20%;
+  height: 8%;
+  top: 85%;
+  left: 37%;
+  border-radius: 50vh;
+  background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);
+  color: #7eabb1;
+  font-family: "微軟正黑體";
+  font-size: 3vh;
+  font-weight: 700;
+  text-align: right;
+  line-height: 9vh;
+  letter-spacing: 0.5vh;
+  box-shadow: 2vh 2vh 5vh rgba(0, 0, 0, 0.15);
+  transition: 0.25s;
+}
+.about:hover {
+  box-shadow: 0vh 0vh 0vh rgba(0, 0, 0, 0.15);
+}
+
+/*.big {
+  padding: 4vh;
+  color: $cream;
+  font-family: "微軟正黑體";
+}*/
+/*.small {
+  padding: 4vh;
+  color: $cream;
+  font-family: "微軟正黑體";
+  font-weight: 800;
+  font-size: 6vh;
+}*/
+/*.m,
+.animal {
   font-family: "Monda", sans-serif;
-  color: #9fbfc4;
+  color: $yellow;
   font-size: 1vh;
-}
-
+  padding: 4vh;
+}*/
 .boat_menu {
   position: absolute;
   width: 30vh;
   height: 20vh;
-  top: 70vh;
-  right: 30vh;
+  top: 75%;
+  left: 30%;
   background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/boat.png");
   background-size: cover;
+  animation: up 2s infinite alternate;
 }
 
 /*-----animation-----*/
@@ -1028,14 +1316,6 @@ a {
 @keyframes ebi {
   0% {
     transform: rotate(-5deg);
-  }
-}
-@keyframes people2 {
-  0% {
-    top: -37vh;
-  }
-  36% {
-    top: 8vh;
   }
 }
 @keyframes fly2 {
