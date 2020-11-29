@@ -293,7 +293,7 @@ body {
 
 .info {
   top: 5%;
-  left: 60%;
+  left: 55%;
   padding-left: 3vh;
   font-size: 6vh;
   font-weight: 700;
@@ -335,7 +335,7 @@ body {
 }
 
 .info_stop.i_right {
-  left: 60%;
+  left: 55%;
 }
 
 .info_stop.i_left {
@@ -411,7 +411,7 @@ body {
 }
 
 .btn.b_right {
-  left: 60%;
+  left: 55%;
 }
 
 .dinner {
@@ -419,7 +419,7 @@ body {
   width: 60vh;
   height: 60vh;
   top: 5%;
-  left: 30%;
+  left: 20%;
   /*border: 1px solid;*/
 }
 
