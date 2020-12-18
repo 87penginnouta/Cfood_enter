@@ -25,7 +25,7 @@ body {
   height: 100vh;
   background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);
   opacity: 0;
-  animation: loading 3s linear;
+  animation: loading 5s linear;
 }
 
 @keyframes loading {
