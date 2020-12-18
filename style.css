@@ -101,7 +101,7 @@ body {
   position: absolute;
   width: 100vw;
   height: 500vh;
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/bdab3c87.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/bg/bdab3c87.png);
   /*background: $blue;*/
   padding: 0;
   margin: 0;
@@ -392,7 +392,7 @@ body {
   bottom: 10%;
   margin-left: 3vh;
   /*background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);*/
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/bdab3c87.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/bg/bdab3c87.png);
   font-family: "Monda", sans-serif;
   font-size: 3vh;
   color: #f0ebd8;
@@ -955,7 +955,7 @@ body {
   position: fixed;
   /*background: $cream;*/
   /*background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);*/
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/bdab3c87.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/bg/bdab3c87.png);
   width: 120vw;
   height: 100vh;
   left: -150vw;
