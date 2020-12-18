@@ -51,7 +51,7 @@ body {
   left: 50%;
   /*background:$fish_dark;*/
   transform: translate(-50%, -50%);
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/icoooo.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/logo/loading.png);
   background-size: cover;
   animation: ico 3s linear;
   transform-origin: 30% 30%;
@@ -157,7 +157,7 @@ body {
   height: 110vh;
   left: 0;
   bottom: 1%;
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/rock.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/rock.png);
   background-size: cover;
   opacity: 0.5;
 }
@@ -191,7 +191,7 @@ body {
   position: absolute;
   width: 10vh;
   height: 18.75vh;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/people.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sky/people.png");
   background-size: cover;
 }
 
@@ -227,7 +227,7 @@ body {
   top: 10%;
   left: 10%;
   /*transform:translate(-50%);*/
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/submarine.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/submarine.png");
   background-size: cover;
 }
 
@@ -239,12 +239,11 @@ body {
   background-size: cover;
 }
 
-.bubble {
+/*.bubble {
   top: 100%;
   left: 10%;
   background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/bubble.png");
-}
-
+}*/
 .traveler.t_sea {
   top: 48%;
   left: 50%;
@@ -261,22 +260,22 @@ body {
 
 .icon.i1 {
   left: 60%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item1_light.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/item1_light.png");
 }
 
 .icon.i2 {
   left: 10%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item2_light.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/item2_light.png");
 }
 
 .icon.i3 {
   left: 60%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item3_light.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/item3_light.png");
 }
 
 .icon.i4 {
   left: 10%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/item4_light.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/item4_light.png");
 }
 
 .info,
@@ -297,8 +296,6 @@ body {
   padding-left: 3vh;
   font-size: 6vh;
   font-weight: 700;
-  /*background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
-  border-radius:3vh;*/
 }
 .info::before {
   content: "";
@@ -318,8 +315,6 @@ body {
   padding-left: 3vh;
   font-size: 6vh;
   font-weight: 700;
-  /*background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
-  border-radius:3vh;*/
 }
 .info_stop::before,
 .info_final::before,
@@ -391,7 +386,6 @@ body {
   height: 15%;
   bottom: 10%;
   margin-left: 3vh;
-  /*background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);*/
   background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/bg/bdab3c87.png);
   font-family: "Monda", sans-serif;
   font-size: 3vh;
@@ -435,7 +429,7 @@ body {
   height: 40%;
   top: 0;
   left: 35%;
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/broccoli.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/broccoli.png);
 }
 
 .carrot {
@@ -443,7 +437,7 @@ body {
   height: 30%;
   top: 35%;
   left: 10%;
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/carrot.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/carrot.png);
 }
 
 .salmon {
@@ -451,7 +445,7 @@ body {
   height: 39%;
   top: 40%;
   left: 52%;
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/salmon.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/salmon.png);
 }
 
 /*-----star-----*/
@@ -460,7 +454,7 @@ body {
   width: 16vw;
   height: 16vw;
   top: 4%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/star.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sky/star.png");
   background-size: cover;
 }
 
@@ -496,7 +490,7 @@ body {
   top: 11%;
   left: 50%;
   transform: translate(-50%);
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island-land.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island/island_land.png");
   background-size: cover;
 }
 
@@ -534,7 +528,7 @@ body {
   height: 20%;
   /*top:130%;*/
   left: 60%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/wave-back.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/wave.png");
   opacity: 0.5;
   animation: wave1 3s infinite alternate;
 }
@@ -553,7 +547,7 @@ body {
   height: 30%;
   /*top:120%;*/
   left: 40%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/wave-back_0.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/wave.png");
   opacity: 0.25;
   animation: wave2 3s infinite alternate;
 }
@@ -565,7 +559,7 @@ body {
   top: 0;
   left: 50%;
   transform: translate(-50%);
-  /*background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_all.png");
+  /*background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island/island_all.png");
   background-size: cover;*/
   transition: 1s;
 }
@@ -580,7 +574,7 @@ body {
   height:100%;
   top:0;
   left:20vh;*/
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/kuruma.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island/island_mono/kuruma.png");
   /*clip-path: polygon(0% 34%, 0% 41%, 7% 41%, 7% 34%);*/
   background-size: cover;
 }
@@ -604,7 +598,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island_cut.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island/island_cut.png");
   background-size: cover;
 }
 
@@ -737,7 +731,7 @@ body {
   height: 19%;
   top: 72.1%;
   left: 42.3%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/shouyu.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island/island_mono/shouyu.png");
   background-size: cover;
 }
 
@@ -760,7 +754,7 @@ body {
   height: 5.7%;
   top: 75.7%;
   left: 86%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/rouru.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island/island_mono/rouru.png");
   background-size: cover;
   transition: 0.5s;
 }
@@ -783,25 +777,25 @@ body {
 .sushi.s1 {
   top: 77.3%;
   left: 25.5%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sushi1.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island/island_mono/sushi1.png");
 }
 
 .sushi.s2 {
   top: 78.1%;
   left: 29.4%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sushi2.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island/island_mono/sushi2.png");
 }
 
 .sushi.s3 {
   top: 78.4%;
   left: 33.5%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sushi3.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island/island_mono/sushi3.png");
 }
 
 .sushi.s4 {
   top: 79%;
   left: 37.5%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sushi4.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/island/island_mono/sushi4.png");
 }
 
 .logo {
@@ -811,7 +805,7 @@ body {
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/logo.svg");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/logo/logo.svg");
   background-size: cover;
   animation: logo 2s infinite alternate;
   text-indent: 101%;
@@ -829,7 +823,7 @@ body {
   top: -70vh;
   left: 47.5%;
   transform: translate(-50%);
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/fly.png");
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sky/fly.png");
   background-size: cover;
   animation: fly2 3s linear;
 }
@@ -841,7 +835,7 @@ body {
   left: 0;
   bottom: 0;
   /*transform:translate(-50%);*/
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/snad.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/sand.png);
   background-size: cover;
 }
 
@@ -866,7 +860,7 @@ body {
   left: 50%;
   bottom: 5%;
   /*transform:translate(-50%);*/
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/grass.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/grass.png);
   background-size: cover;
 }
 
@@ -892,7 +886,7 @@ body {
   width: 100%;
   height: 40%;
   bottom: 0;
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/iron2.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/tower.png);
 }
 
 .egg {
@@ -900,7 +894,7 @@ body {
   /*height:65%;*/
   height: 45%;
   bottom: 35%;
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/egg.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/egg.png);
 }
 
 .egg_btn {
