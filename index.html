@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta charset="UTF-8">  
+  <meta charset="UTF-8">
+  <title>CodePen - Cfood_enter</title>
   <link rel="stylesheet" href="./style.css">
 
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>味補鮮知 - 海鮮的秘密 | 你不可不知的台灣海鮮食魚文化</title>
   <link REL="SHORTCUT ICON" href="https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/logo/favicon1.ico">
@@ -18,9 +23,8 @@
     }
   </script>
 </head>
-<body>
-<!-- partial:index.partial.html -->
 
+<body>
   <div id="loading">
     <div class="loading_content">
       <h5 class="word_lo w1">味</h5>
@@ -139,7 +143,7 @@
       </div>
 
       <div class="container c4">
-        <div class="info_stop i_right">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span class="highlight_number">&ensp;04</span><br>發出可剝的聲音&emsp;&emsp;&emsp;&emsp;<br><span class="content">「蝦類覺得宇宙害羞。」</span></div>
+        <div class="info_stop i_right">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span class="highlight_number">&ensp;04</span><br>發出可剝的聲音&emsp;&emsp;&emsp;<br><span class="content">「蝦類覺得宇宙害羞。」</span></div>
         <a href="https://87penginnouta.github.io/Cfood_Shrimp/">
           <div class="btn b_right">MORE</div>
         </a>
@@ -152,7 +156,9 @@
 
       <div class="game">
         <div class="egg">
-          <div class="egg_btn"></div>
+          <label class="modal_btn" for="modal-1">
+            <div class="egg_btn"></div>
+          </label>
         </div>
         <div class="iron"></div>
       </div>
@@ -166,91 +172,96 @@
     </div>
 
   </div>
+  
+  <div class="who_modal_1">
+        <input class="modal-state" id="modal-1" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-1"></label>
+          <div class="modal__inner">
+            <div class="modal_inner_bg"></div>
+            <label class="modal__close" for="modal-1"></label>
+            <h1 class="game_title">鮮之塔的食客</h1>
+            <ul class="game_nav">
+              <li class="game_li">遊戲類型：冒險劇情向猜題遊戲</li>
+              <li class="game_li">遊玩時間：約10~15分鐘</li>
+              <li class="game_li">檔案大小：約171MB</li>
+            </ul>
+            <a class="game_link" href="https://drive.google.com/drive/folders/1cnRjexL-JvxRPkSs5VK0RJqAnvPzNJxv">前往下載頁面</a>
+          </div>
+        </div>
+      </div>
 
-  <input id="toggle" type="checkbox" />
-  <span class="menu_bg">
+<div id="menu_all">
+    <!--menu-->
+    <input id="toggle" type="checkbox" />
+    <span class="menu_bg">
 
-    <div class="menu_top">
-      <a href="https://87penginnouta.github.io/Cfood_Cephalopoda/">
-        <div class="info_menu i_left">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span class="highlight_number">&ensp;01</span><br>頭足類&emsp;&emsp;&emsp;&emsp;</div>
+      <div class="menu_link_content">
+        <div class="menu_nav">
+          <a class="menu_web w1 m_hover" href="https://87penginnouta.github.io/Cfood_prologue/">
+            <span class="m_span">Prologue</span>
+            <div class="menu_link">前言</div>
+          </a>
+          <a class="menu_web w2 m_hover" href="https://87penginnouta.github.io/Cfood_enter/">
+            <span class="m_span">Top</span>
+            <div class="menu_link">首頁</div>
+          </a>
+          <a class="menu_web w3 m_hover" href="https://87penginnouta.github.io/Cfood_Cephalopoda/">
+            <span class="m_span">Stop-1</span>
+            <div class="menu_link m_big">別用觸腕旋轉我</div>
+          </a>
+          <a class="menu_web w4 m_hover" href="https://87penginnouta.github.io/Cfood_Shellfish/">
+            <span class="m_span">Stop-2</span>
+            <div class="menu_link m_big">天黑請閉殼</div>
+          </a>
+          <a class="menu_web w5 m_hover" href="https://87penginnouta.github.io/Cfood_Fish/">
+            <span class="m_span">Stop-3</span>
+            <div class="menu_link m_big">鰭士團招募中</div>
+          </a>
+          <a class="menu_web w6 m_hover" href="https://87penginnouta.github.io/Cfood_Shrimp/">
+            <span class="m_span">Stop-4</span>
+            <div class="menu_link m_big">發出可剝的聲音</div>
+          </a>
+          <a class="menu_web w7 m_hover" href="https://87penginnouta.github.io/Cfood_epilogue/">
+            <span class="m_span">Epilogue</span>
+            <div class="menu_link">尾聲</div>
+          </a>
 
-      </a>
+          <div class="menu_web w_line"><span class="m_span"></span></div>
+        </div>
 
-      <a href="https://87penginnouta.github.io/Cfood_Shellfish/">
-        <div class="info_menu i_right">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span class="highlight_number">&ensp;02</span><br>貝類&emsp;&emsp;&emsp;&emsp;</div>
+        <img class="menu_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/sea/submarine.png" alt="">
 
-      </a>
-    </div>
+      </div>
+      <div class="sns_content s_menu">
+        <a class="sns_btn s_fb" href="https://www.facebook.com/Cfood.secret" target="_blank">
+          <img class="btn_img" src="https://www.flaticon.com/svg/static/icons/svg/20/20837.svg" alt="">
+        </a>
 
-    <div class="menu_bottom">
-      <a href="https://87penginnouta.github.io/Cfood_Fish/">
-        <div class="info_menu i_left">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span class="highlight_number">&ensp;03</span><br>魚類&emsp;&emsp;&emsp;&emsp;</div>
+        <a class="sns_btn s_ig" href="https://www.instagram.com/fishkw.2020/" target="_blank">
+          <img class="btn_img" src="https://www.flaticon.com/svg/static/icons/svg/1384/1384031.svg" alt="">
+        </a>
+      </div>
+    </span>
 
-      </a>
+    <span class="text">MENU</span>
 
-      <a href="https://87penginnouta.github.io/Cfood_Shrimp/">
-        <div class="info_menu i_right">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span class="highlight_number">&ensp;04</span><br>蝦類&emsp;&emsp;&emsp;&emsp;</div>
+    <div id="menu">
+      <div class="hamburger">
 
-      </a>
-    </div>
+        <label for="toggle" class="la">
+          <svg class="ham hamRotate" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+          </svg>
+        </label>
 
-    <!--<ul class="animal_link a1">
-      <a href="#">
-        <li class="small"><span class="animal">01</span>頭足<span class="animal">Cephalopoda</span></li>
-      </a>
-      <a href="#">
-        <li class="small"><span class="animal">02</span>貝類<span class="animal">Shellfish</span></li>
-      </a>
-    </ul>-->
-
-    <!--<ul class="animal_link a2">
-      <a href="#">
-        <li class="small"><span class="animal">03</span>魚類<span class="animal">Fish</span></li>
-      </a>
-      <a href="#">
-        <li class="small"><span class="animal">04</span>蝦類<span class="animal">Shrimp</span></li>
-      </a>
-    </ul>-->
-
-    <!--遊戲<span class="m">Game</span></li>
-      </a>
-      <a href="#">
-        <li class="big">關於<span class="m">About</span></li>
-      </a>
-    </ul>-->
-    
-    <a href="https://87penginnouta.github.io/Cfood_secret/">
-      <div class="about">鮮知與他們的產地&emsp;&ensp;</div>
-      </a>
-    
-    <div class="boat_menu"></div>
-    
-    <a href="https://www.facebook.com/Cfood.secret" target="_blank">
-      <img class="fb" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTUxMiAyNTZjMC0xNDEuNC0xMTQuNi0yNTYtMjU2LTI1NnMtMjU2IDExNC42LTI1NiAyNTYgMTE0LjYgMjU2IDI1NiAyNTZjMS41IDAgMyAwIDQuNS0uMXYtMTk5LjJoLTU1di02NC4xaDU1di00Ny4yYzAtNTQuNyAzMy40LTg0LjUgODIuMi04NC41IDIzLjQgMCA0My41IDEuNyA0OS4zIDIuNXY1Ny4yaC0zMy42Yy0yNi41IDAtMzEuNyAxMi42LTMxLjcgMzEuMXY0MC44aDYzLjVsLTguMyA2NC4xaC01NS4ydjE4OS41YzEwNy0zMC43IDE4NS4zLTEyOS4yIDE4NS4zLTI0Ni4xeiIgZmlsbD0iI2YwZWJkOCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L3N2Zz4=" />
-    </a>
-    
-    <a href="https://www.instagram.com/fishkw.2020/" target="_blank">
-      <img class="ig" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDg5Ljc1OCA4OS43NTgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPHBhdGggc3R5bGU9IiIgZD0iTTU4LjI1NSwyMy44OEgzMS41MDNjLTQuMjcsMC03Ljc0NCwzLjQ3NC03Ljc0NCw3Ljc0NHYyNi43NTJjMCw0LjI3LDMuNDc0LDcuNzQ1LDcuNzQ0LDcuNzQ1ICAgaDI2Ljc1MmM0LjI3LDAsNy43NDUtMy40NzQsNy43NDUtNy43NDVWMzEuNjI0QzY2LDI3LjM1NCw2Mi41MjYsMjMuODgsNTguMjU1LDIzLjg4eiBNNDQuODc5LDU4LjkwNiAgIGMtNy42NjcsMC0xMy45MDUtNi4yMzgtMTMuOTA1LTEzLjkwNmMwLTcuNjY3LDYuMjM4LTEzLjkwNSwxMy45MDUtMTMuOTA1YzcuNjY4LDAsMTMuOTA2LDYuMjM4LDEzLjkwNiwxMy45MDUgICBDNTguNzg1LDUyLjY2Nyw1Mi41NDYsNTguOTA2LDQ0Ljg3OSw1OC45MDZ6IE01OS4yMzIsMzMuOTdjLTEuODE1LDAtMy4yOTEtMS40NzYtMy4yOTEtMy4yOWMwLTEuODE0LDEuNDc2LTMuMjksMy4yOTEtMy4yOSAgIGMxLjgxNCwwLDMuMjksMS40NzYsMy4yOSwzLjI5QzYyLjUyMiwzMi40OTQsNjEuMDQ2LDMzLjk3LDU5LjIzMiwzMy45N3oiIGZpbGw9IiNmMGViZDgiIGRhdGEtb3JpZ2luYWw9IiM2YTQ1M2IiPjwvcGF0aD4KCTxwYXRoIHN0eWxlPSIiIGQ9Ik00NC44NzksMzYuOTcxYy00LjQyNiwwLTguMDMsMy42MDItOC4wMyw4LjAyOGMwLDQuNDI4LDMuNjA0LDguMDMxLDguMDMsOC4wMzEgICBjNC40MjgsMCw4LjAyOS0zLjYwMyw4LjAyOS04LjAzMUM1Mi45MDgsNDAuNTc0LDQ5LjMwNiwzNi45NzEsNDQuODc5LDM2Ljk3MXoiIGZpbGw9IiNmMGViZDgiIGRhdGEtb3JpZ2luYWw9IiM2YTQ1M2IiPjwvcGF0aD4KCTxwYXRoIHN0eWxlPSIiIGQ9Ik00NC44NzksMEMyMC4wOTQsMCwwLDIwLjA5NCwwLDQ0Ljg3OWMwLDI0Ljc4NSwyMC4wOTQsNDQuODc5LDQ0Ljg3OSw0NC44NzkgICBjMjQuNzg1LDAsNDQuODc5LTIwLjA5NCw0NC44NzktNDQuODc5Qzg5Ljc1OCwyMC4wOTQsNjkuNjY0LDAsNDQuODc5LDB6IE03MS44NzUsNTguMzc2YzAsNy41MTEtNi4xMDksMTMuNjItMTMuNjIsMTMuNjJIMzEuNTAzICAgYy03LjUxLDAtMTMuNjItNi4xMDktMTMuNjItMTMuNjJWMzEuNjI0YzAtNy41MSw2LjExLTEzLjYyLDEzLjYyLTEzLjYyaDI2Ljc1MmM3LjUxMSwwLDEzLjYyLDYuMTEsMTMuNjIsMTMuNjJWNTguMzc2eiIgZmlsbD0iI2YwZWJkOCIgZGF0YS1vcmlnaW5hbD0iIzZhNDUzYiI+PC9wYXRoPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" />
-    </a>
-    
-  </span>
-
-  <span class="text">MENU</span>
-
-  <div id="menu">
-    <div class="hamburger">
-
-      <label for="toggle" class="la">
-        <svg class="ham hamRotate" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
-          <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-          <path class="line middle" d="m 30,50 h 40" />
-          <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-        </svg>
-      </label>
-
+      </div>
     </div>
 
   </div>
+</body>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
