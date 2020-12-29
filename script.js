@@ -18,7 +18,7 @@ var scrollObj = skrollr.init({
   scale: 1,
 
   //讓文本高度自動達到滿足Keyframe的條件
-  forceHeight: true,
+  //forceHeight: true,
 
   //針對行動裝置的功能
   mobileCheck: function () {},
