@@ -19,6 +19,11 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+html,
+body{
+  height:500vh;
+}
+
 #loading {
   position: fixed;
   width: 100vw;
