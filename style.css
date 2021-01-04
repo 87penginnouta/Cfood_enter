@@ -400,7 +400,15 @@ body{
   box-shadow: 2vh 2vh 2vh rgba(0, 0, 0, 0.15);
   border-radius: 50vh;
   transition: 0.25s;
+  animation: btn 2s infinite;
 }
+
+@keyframes btn{
+  0%{
+    transform:scale(1.1);
+  }
+}
+
 .btn:hover {
   box-shadow: 0vh 0vh 0vh rgba(0, 0, 0, 0.15);
 }
