@@ -1128,51 +1128,84 @@ body{
     box-sizing: border-box;
   }
 }
-.game_title {
-  position: absolute;
-  width: 60%;
-  height: 20%;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%);
-  font-size: 5vh;
-  color: #f0ebd8;
-  letter-spacing: 0.5vh;
-  text-align: center;
+.game_logo{
+  position:absolute;
+  width:auto;
+  height:20%;
+  top:5%;
+  left:50%;
+  transform:translate(-50%);
+  filter:grayscale(1) invert(1);
 }
 
-.game_nav {
-  position: absolute;
-  width: 60%;
-  height: 40%;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%);
-  list-style: none;
-  color: #f0ebd8;
-  font-size: 3vh;
-  letter-spacing: 0.5vh;
-  padding: 1vh;
-  font-family: "Monda", "微軟正黑體";
+.game_nav{
+  position:absolute;
+  width:60%;
+  height:40%;
+  top:30%;
+  left:50%;
+  transform:translate(-50%);
+  list-style:none;
+  color:$cream;
+  font-size:3vh;
+  letter-spacing:0.5vh;
+  margin:1vh;
+  font-family:"Monda","微軟正黑體";
 }
 
-.game_link {
-  position: absolute;
-  width: 30%;
-  height: 4.5vh;
-  bottom: 10%;
-  left: 50%;
-  transform: translate(-50%);
-  background: #ffdb02;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 3vh;
-  line-height: 1.5;
-  letter-spacing: 0.5vh;
-  text-align: center;
-  font-weight: 700;
-  box-shadow: 0 0 3vh rgba(0, 0, 0, 0.15);
+.game_li{
+  padding:1vh;
 }
+
+.game_link{
+  position:absolute;
+  width:50%;
+  height:8vh;
+  left:50%;
+  transform:translate(-50%);
+  background:$shadow_modal;
+  text-decoration:none;
+  color:$cream;
+  border-radius:2vh;
+  box-shadow:0 0 3vh $shadow_sea;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.game_link.g1{
+   bottom:22.5%;
+}
+
+.game_link.g2{
+   bottom:10%;
+}
+
+.game_icon{
+  position:absolute;
+  width:50%;
+  height:50%;
+  top:50%;
+  left:25%;
+  transform:translate(-50%,-50%);
+  filter:invert(1);
+  opacity:0.5;
+}
+
+.game_word{
+  position:absolute;
+  width:80%;
+  height:4.5vh;
+  top:50%;
+  left:65%;
+  transform:translate(-50%,-50%);
+  font-size:3vh;
+  line-height:1.5;
+  letter-spacing:0.5vh;
+  font-weight:700;
+  font-family:"Monda","微軟正黑體";
+}
+
 
 /*-----menu-----*/
 #menu {
