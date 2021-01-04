@@ -1146,7 +1146,7 @@ body{
   left:50%;
   transform:translate(-50%);
   list-style:none;
-  color:$cream;
+  color:#f0ebd8;
   font-size:3vh;
   letter-spacing:0.5vh;
   margin:1vh;
@@ -1163,11 +1163,11 @@ body{
   height:8vh;
   left:50%;
   transform:translate(-50%);
-  background:$shadow_modal;
+  background:rgba(0, 0, 0, 0.7);
   text-decoration:none;
-  color:$cream;
+  color:#f0ebd8;
   border-radius:2vh;
-  box-shadow:0 0 3vh $shadow_sea;
+  box-shadow:0 0 3vh rgba(0, 0, 0, 0.3);
   display:flex;
   justify-content:center;
   align-items:center;
