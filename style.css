@@ -985,6 +985,40 @@ body{
   right: 0;
 }
 
+#buttons_all {
+  position: fixed;
+  width: 7vh;
+  height: 7vh;
+  bottom: 3%;
+  right: 1%;
+  animation: bg 5s;
+}
+
+#gotop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $cream_bg;
+  top: 10%;
+  /*這個要開不然還沒滾卷軸就會出現*/
+  display: none;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  box-shadow: 0 0 3vh $shadow;
+
+  &:hover {
+    background: $cream;
+    transition: 0.5s;
+  }
+
+  &:active {
+    background: $cream;
+    transition: 0.5s;
+    transform: translate(-50%) scale(1.2);
+  }
+}
+
 .btn_img {
   position: absolute;
   width: 50%;
