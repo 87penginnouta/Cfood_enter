@@ -1,0 +1,187 @@
+@media screen and (max-width: 1200px) {
+
+    #island {
+        width: 150vh;
+        height: 384vh;
+    }
+
+    .dinner {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    .info,
+    .info_stop,
+    .info_final {
+        font-size: 4.5vh;
+    }
+
+    .info_stop.i_left,
+    .info_final {
+        left: 15%;
+    }
+
+    .info_stop::before {
+        width: 4vh;
+        height: 4vh;
+        top: 12.5%;
+        left: 6%;
+    }
+
+    .content {
+        margin-top: 2vh;
+        font-size: 2.75vh;
+    }
+
+    .btn {
+        bottom: 25%;
+    }
+
+    .btn.b_left {
+        left: 15%;
+    }
+
+    .rock {
+        width: 176vh;
+        height: 88vh;
+    }
+
+    .game {
+        width: 46.5vh;
+        height: 67.5vh;
+        left: 77.5%;
+    }
+
+    .game_talk {
+        width: 25%;
+        top: 85%;
+        left: 62.5%;
+    }
+
+    .modal__inner {
+        width: 72.5%;
+        height: 90%;
+        box-sizing: border-box;
+    }
+
+    .sns_content.s_menu {
+        width: 17.5%;
+    }
+}
+
+/* @media screen and (max-width: 480px) {
+    #bg {
+        width: 100vw;
+        height: 500vh;
+    }
+
+    .sea {
+        background: linear-gradient(rgba(240, 235, 216, 0.25) 10%, rgba(56, 99, 105, 0.75) 20%);
+    }
+
+    .logo {
+        width: 50vh;
+        height: 23.3vh;
+        left: 50%;
+    }
+
+    .fly {
+        display: none;
+    }
+
+    .traveler {
+        display: none;
+    }
+
+    .star {
+        display: none;
+    }
+
+    .land {
+        width: 47.2%;
+        height: 10.3%;
+        top: 15vh;
+        left: 37.5%;
+    }
+
+    #route {
+        width: 10vh;
+        height: 430vh;
+        left: 10%;
+        top: 70vh;
+    }
+
+    .tunnel {
+        width: 10vh;
+    }
+
+    .car {
+        display: none;
+    }
+
+    #toggle {
+        width: 10vh;
+        height: 10vh;
+        top: 5vh;
+        left: 93%;
+        transform: translate(-50%, -50%);
+    }
+
+    #menu {
+        width: 100vw;
+        height: 10vh;
+        left: 0;
+        top: 0;
+        border-bottom: 0.25vh solid #fff;
+    }
+
+    .menu_bg {
+        background-image: url("./img/bg/loading_bg.jpg");
+        width: 110vw;
+        height: 120vh;
+        left: 0vw;
+        top: -150vh;
+        transition: 1s;
+    }
+
+    .hamburger {
+        width: 10vh;
+        height: 10vh;
+        top: 50%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+    }
+
+    .text {
+        display: none;
+    }
+
+    #toggle:checked~.menu_bg {
+        transform: translateY(140vh);
+        transition: 1s;
+    }
+
+    .message {
+        width: 50vw;
+        height: 7.5vh;
+        background: #f0ebd8;
+    }
+
+    .message.m1 {
+        top: 7.5vh;
+        left: 20vh;
+    }
+
+    .message.m2 {
+        top: 17.5vh;
+        left: 25vh;
+    }
+
+    .b1top,
+    .b2top,
+    .b3top,
+    .b4top {
+        width: 25vh;
+        height: 30vh;
+    }
+} */
