@@ -1,61 +1,18 @@
 @media (max-width: 1200px) {
 
-    #island {
-        width: 150vh;
-        height: 384vh;
-    }
-
     .dinner {
-        width: 40vh;
-        height: 40vh;
+        width: 20rem;
+        height: 20rem;
     }
 
-    .info,
-    .info_stop,
-    .info_final {
-        font-size: 4.5vh;
-    }
-
-    .info_stop.i_left,
-    .info_final {
-        left: 15%;
-    }
-
-    .info_stop::before {
-        width: 4vh;
-        height: 4vh;
-        top: 12.5%;
-        left: 6%;
-    }
-
-    .content {
-        margin-top: 2vh;
-        font-size: 2.75vh;
-    }
-
-    .btn {
-        bottom: 25%;
-    }
-
-    .btn.b_left {
-        left: 15%;
-    }
-
-    .rock {
-        width: 176vh;
-        height: 88vh;
+    .container{
+        width: 80%;
+        left:25%;
     }
 
     .game {
-        width: 46.5vh;
-        height: 67.5vh;
-        left: 77.5%;
-    }
-
-    .game_talk {
-        width: 25%;
-        top: 85%;
-        left: 62.5%;
+        height: 80%;
+        bottom: 0;
     }
 
     .modal__inner {
@@ -64,8 +21,8 @@
         box-sizing: border-box;
     }
 
-    .sns_content.s_menu {
-        width: 17.5%;
+    .game_logo{
+        height: 55%;
     }
 }
 
@@ -86,46 +43,26 @@
         margin-top: 15%;
     }
 
-    /* .fly {
-        display: none;
-    } */
-
     .traveler {
-        width: 6.5vh;
-        height: 12vh;
+        width: 3.5rem;
+        height: 6.5rem;
     }
-
 
     .star {
         display: none;
     }
 
     #island {
-        width: 100vh;
-        height: 256vh;
-        margin-top: 40%;
+        width: 45rem;
+        height: 115rem;
+        margin-top: 70%;
     }
 
     .dinner {
         left: 10%;
         top: 2.5%;
-    }
-
-    .info_stop::before {
-        display: none;
-    }
-
-    .info_final::before {
-        width: 26px;
-        height: 26px;
-    }
-
-    .highlight_stop {
-        opacity: 0;
-    }
-
-    .highlight_number {
-        margin-left: -87%;
+        width:15rem;
+        height: 15rem;
     }
 
     .info_final .highlight_number {
@@ -137,83 +74,105 @@
     .info_stop.i_left,
     .info_stop.i_right,
     .info_final {
-        left: 5%;
+        left: 7.5%;
         letter-spacing: 0.05em;
     }
 
     .info,
     .info_stop,
     .info_final {
-        font-size: 26px;
+        font-size: 30px;
     }
 
-    .under_sea .info {
-        margin-top: 180px;
+    .open_info{
+        margin-top: 30%;
+    }
+
+    .info::before{
+        display: none;
     }
 
     .content {
-        font-size: 18px;
+        font-size: 15px;
     }
 
-    .info_final .content {
-        width: 120%;
+    .container{
+        left:7.5%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .btn.b_left,
-    .btn.b_right {
-        width: 80%;
-        left: 5%;
-        bottom: 35%;
-        animation: none;
+    .c_content{
+        width: 100%;
     }
 
-    .icon {
-        width: 200px;
-        height: 180px;
+    .game{
+        width: 100%;
+        left: 0;
+        height: 50%;
     }
 
-    .icon.i1,
-    .icon.i2,
-    .icon.i3,
-    .icon.i4 {
-        left: 55%;
+    .egg{
+        left:0%;
     }
 
-    .game_talk {
-        width: 50%;
-        top: 90.5%;
-        left: 5%;
+    .egg_btn{
+        width:7.5rem;
+        height: 7.5rem;
+        bottom: 30%;
     }
 
-    .game_word {
-        font-size: 18px;
+    .grass{
+        display: none;
+    }
+
+    .rock{
+        width: 100%;
     }
 
     .copyright {
-        width: 80%;
+        width: 90%;
+        font-size: 10px;
     }
 
-    /* .land {
-        width: 47.2%;
-        height: 10.3%;
-        top: 15vh;
-        left: 50%;
-    } */
+    .modal__inner {
+        width: 80%;
+        height: 70%;
+    }
 
-    /* #route {
-        width: 10vh;
-        height: 430vh;
-        left: 10%;
-        top: 70vh;
-    } */
+    .modal__close {
+        width: 36px;
+        height: 36px;
+        right: 10%;
+        top: 30px;
+    }
 
-    /* .tunnel {
-        width: 10vh;
-    } */
+    .game_logo{
+        height: 30%;
+    }
 
-    /* .car {
-        display: none;
-    } */
+    .game_nav{
+        width: 100%;
+        height: 10%;
+        text-align: left;
+    }
+
+    .game_word{
+        text-align: left;
+    }
+
+    .g_link_area{
+        width:100%;
+        height: 30%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .game_link{
+        width: 90%;
+    }
 
     #toggle {
         width: 10vh;
@@ -228,15 +187,14 @@
         height: 10vh;
         left: 0;
         top: 0;
-        /* border-bottom: 0.25vh solid #fff; */
     }
 
     .menu_bg {
         background-image: url("./img/bg/loading_bg.jpg");
         width: 110vw;
-        height: 120vh;
+        height: 120dvh;
         left: 0vw;
-        top: -150vh;
+        top: -150dvh;
         transition: 1s;
     }
 
@@ -276,28 +234,4 @@
         left: 5%;
         top: 80%;
     }
-
-    /* .message {
-        width: 50vw;
-        height: 7.5vh;
-        background: #f0ebd8;
-    } */
-
-    /* .message.m1 {
-        top: 7.5vh;
-        left: 20vh;
-    } */
-
-    /* .message.m2 {
-        top: 17.5vh;
-        left: 25vh;
-    } */
-
-    /* .b1top,
-    .b2top,
-    .b3top,
-    .b4top {
-        width: 25vh;
-        height: 30vh;
-    } */
 }
