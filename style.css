@@ -1,7 +1,8 @@
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  font-family: "Monda", "Arial", "Noto Sans TC", "微軟正黑體", sans-serif;
+  /* font-family: "Monda", "Arial", "Noto Sans TC", "微軟正黑體", sans-serif; */
+  font-family: "Monda", "Arial", "微軟正黑體", sans-serif;
 }
 
 html::-webkit-scrollbar {
@@ -19,6 +20,8 @@ html,
 body {
   height: 500vh;
 }
+
+/*---loading---*/
 
 .loading_wrapper {
   position: absolute;
@@ -72,10 +75,11 @@ body {
 
 .word_lo {
   position: absolute;
-  font-size: 4vh;
+  /* font-size: 4vh; */
+  font-size: 1.5rem;
   top: 50%;
   color: #7eabb1;
-  font-family: "微軟正黑體";
+  /* font-family: "微軟正黑體"; */
   transform: translate(-50%, -50%);
 }
 
@@ -95,6 +99,8 @@ body {
   left: 80%;
 }
 
+/*---section---*/
+
 #bg {
   /* position: absolute; */
   position: relative;
@@ -108,69 +114,167 @@ body {
   overflow: hidden;
 }
 
-#section1 {
+#section1,
+#section2,
+#section3{
   position: absolute;
   width: 100%;
+  left: 0;
+}
+
+#section1 {
   height: 20%;
   top: 0;
-  left: 0;
 }
 
 #section2 {
-  position: absolute;
-  width: 100%;
   height: 40%;
   top: 40%;
-  left: 0;
 }
 
 #section3 {
-  position: absolute;
-  width: 100%;
   height: 20%;
   bottom: 0%;
-  left: 0;
 }
 
-.rock {
+.info,
+.content,
+.info_stop,
+.info_final {
+  /* position: absolute; */
+  color: #f0ebd8;
+  /* line-height: 1.5; */
+  /* letter-spacing: 0.125em; */
+  letter-spacing: 0.1em;
+}
+
+.info {
+  top: 5%;
+  left: 55%;
+  /* padding-left: 3vh; */
+  /* font-size: 6vh; */
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+.info::before {
+  content: "";
   position: absolute;
-  width: 220vh;
-  height: 110vh;
-  left: 0;
-  bottom: 1%;
-  background-image: url("./img/sea/rock.png");
+  width: 2rem;
+  height: 2rem;
+  margin: -25px;
+  /* top: -15%; */
+  /* left: 0%; */
+  background: #ffdb02;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  border-radius: 5px;
+}
+
+.info_stop,
+.info_final {
+  /* top: 5%; */
+  /* padding-left: 3vh; */
+  /* font-size: 6vh; */
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.open_info{
+  position: absolute;
+  left:22.5%;
+}
+
+.highlight {
+  color: #ffdb02;
+  font-weight: 700;
+}
+
+.highlight_stop {
+  color: #ffdb02;
+  /* font-size: 2vh; */
+  font-size: 1.1rem;
+  letter-spacing: 0em;
+}
+
+.highlight_number {
+  color: #ffdb02;
+  /* font-size: 4vh; */
+  font-size: 1.5rem;
+  letter-spacing: 0em;
+}
+
+.content {
+  /* font-size: 3vh; */
+  font-size: 1.1rem;
+  line-height: 180%;
+  font-weight: 500;
+  /* font-weight: 700; */
+}
+
+/*---s1---*/
+
+.logo {
+  position: absolute;
+  /* width: 60vh; */
+  width:26rem;
+  /* height: 28vh; */
+  height: 12rem;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("./img/bg/logo.svg");
   background-size: cover;
-  opacity: 0.5;
+  animation: logo 2s infinite alternate;
+  text-indent: 101%;
+  /*使文字的縮排增多至超出區域*/
+  white-space: nowrap;
+  /*使文字不能進行換行，避免字數過多時自動換行*/
+  overflow: hidden;
+  /*transition: 1s;*/
 }
 
-.container {
+.fly {
   position: absolute;
-  width: 100%;
-  height: 25%;
-  left: 0;
+  width: 47.6%;
+  height: 52.6%;
+  top: -70vh;
+  left: 47.5%;
+  transform: translate(-50%);
+  background-image: url("./img/sky/fly.png");
+  background-size: cover;
+  animation: fly2 3s linear;
 }
 
-.container.c1 {
-  top: 0;
+/*-----star-----*/
+.star {
+  position: absolute;
+  width: 16vw;
+  height: 16vw;
+  top: 4%;
+  background-image: url("./img/sky/star.png");
+  background-size: cover;
 }
 
-.container.c2 {
-  top: 25%;
+.star.s_right {
+  right: 0%;
+  animation: up 2s infinite alternate;
 }
 
-.container.c3 {
-  top: 50%;
-}
-
-.container.c4 {
-  top: 75%;
+.star.s_left {
+  left: 0%;
+  transform: scaleX(-1);
+  animation: up_star 2s infinite alternate;
 }
 
 /*-----traveler-----*/
 .traveler {
   position: absolute;
-  width: 10vh;
-  height: 18.75vh;
+  /* width: 10vh; */
+  /* height: 18.75vh; */
+  width: 4.75rem;
+  height: 9rem;
   background-image: url("./img/sky/people.png");
   background-size: cover;
 }
@@ -203,8 +307,10 @@ body {
 
 .submarine {
   position: absolute;
-  width: 50vh;
-  height: 36vh;
+  /* width: 50vh; */
+  /* height: 36vh; */
+  width: 10rem;
+  height: 8rem;
   top: 10%;
   left: 10%;
   background-image: url("./img/sea/submarine.png");
@@ -218,218 +324,13 @@ body {
   opacity: 1;
 }
 
-.icon {
-  position: absolute;
-  width: 60vh;
-  height: 52vh;
-  top: 0%;
-  background-size: cover;
-  background-size: cover;
-  opacity: 0.15;
-}
-
-.icon.i1 {
-  left: 60%;
-  background-image: url("./img/sea/item1_light.png");
-}
-
-.icon.i2 {
-  left: 10%;
-  background-image: url("./img/sea/item2_light.png");
-}
-
-.icon.i3 {
-  left: 60%;
-  background-image: url("./img/sea/item3_light.png");
-}
-
-.icon.i4 {
-  left: 10%;
-  background-image: url("./img/sea/item4_light.png");
-}
-
-.info,
-.content,
-.info_stop,
-.info_final {
-  position: absolute;
-  color: #f0ebd8;
-  font-family: "微軟正黑體";
-  line-height: 1.5;
-  letter-spacing: 0.125em;
-}
-
-.info {
-  top: 5%;
-  left: 55%;
-  padding-left: 3vh;
-  font-size: 6vh;
-  font-weight: 700;
-}
-
-.info::before {
-  content: "";
-  position: absolute;
-  width: 4vh;
-  height: 4vh;
-  top: -15%;
-  left: 0%;
-  background: #ffdb02;
-  clip-path: polygon(0 0, 0% 100%, 100% 0);
-  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
-}
-
-.info_stop,
-.info_final {
-  top: 5%;
-  padding-left: 3vh;
-  font-size: 6vh;
-  font-weight: 700;
-}
-
-.info_stop::before,
-.info_final::before {
-  content: "";
-  position: absolute;
-  width: 6vh;
-  height: 6vh;
-  top: 5%;
-  left: 5%;
-  background: #ffdb02;
-  clip-path: circle(50% at 50% 50%);
-  -webkit-clip-path: circle(50% at 50% 50%);
-}
-
-.info_stop.i_right {
-  left: 55%;
-}
-
-.info_stop.i_left,
-.info_final {
-  left: 10%;
-}
-
-.highlight {
-  color: #ffdb02;
-}
-
-.highlight_stop {
-  color: #ffdb02;
-  font-size: 2vh;
-  letter-spacing: 0em;
-}
-
-.highlight_number {
-  color: #ffdb02;
-  font-size: 4vh;
-  letter-spacing: 0em;
-}
-
-.content {
-  font-size: 3vh;
-  font-weight: 700;
-}
-
-.btn {
-  position: absolute;
-  width: 15%;
-  height: 15%;
-  bottom: 10%;
-  margin-left: 3vh;
-  background-image: url("./img/bg/menu_bg.jpg");
-  font-size: 3vh;
-  color: #f0ebd8;
-  text-align: center;
-  line-height: 250%;
-  box-shadow: 2vh 2vh 2vh rgba(0, 0, 0, 0.15);
-  border-radius: 50vh;
-  transition: 0.25s;
-  animation: btn 2s infinite;
-}
-
-@keyframes btn {
-  0% {
-    transform: scale(1.1);
-  }
-}
-
-.btn:hover {
-  box-shadow: 0vh 0vh 0vh rgba(0, 0, 0, 0.15);
-}
-
-.btn.b_left {
-  left: 10%;
-}
-
-.btn.b_right {
-  left: 55%;
-}
-
-.dinner {
-  position: absolute;
-  width: 60vh;
-  height: 60vh;
-  top: 5%;
-  left: 20%;
-}
-
-.broccoli,
-.carrot,
-.salmon {
-  position: absolute;
-  background-size: cover;
-}
-
-.broccoli {
-  width: 43%;
-  height: 40%;
-  top: 0;
-  left: 35%;
-  background-image: url("./img/sea/broccoli.png");
-}
-
-.carrot {
-  width: 33%;
-  height: 30%;
-  top: 35%;
-  left: 10%;
-  background-image: url("./img/sea/carrot.png");
-}
-
-.salmon {
-  width: 50%;
-  height: 39%;
-  top: 40%;
-  left: 52%;
-  background-image: url("./img/sea/salmon.png");
-}
-
-/*-----star-----*/
-.star {
-  position: absolute;
-  width: 16vw;
-  height: 16vw;
-  top: 4%;
-  background-image: url("./img/sky/star.png");
-  background-size: cover;
-}
-
-.star.s_right {
-  right: 0%;
-  animation: up 2s infinite alternate;
-}
-
-.star.s_left {
-  left: 0%;
-  transform: scaleX(-1);
-  animation: up_star 2s infinite alternate;
-}
-
 /*-----island-----*/
 #island {
   position: absolute;
-  width: 200vh;
-  height: 512vh;
+  /* width: 200vh; */
+  width:90rem;
+  /* height: 512vh; */
+  height: 230rem;
   top: 10%;
   left: 50%;
   transform: translate(-50%);
@@ -463,8 +364,11 @@ body {
 .under_sea {
   height: 350%;
   top: 150%;
-  background: rgba(0, 0, 0, 0.3);
+  /* background: rgba(0, 0, 0, 0.3); */
+  background-color: rgba(0, 0, 0, 0.2);
 }
+
+
 
 .wave1,
 .wave2 {
@@ -779,56 +683,192 @@ body {
   background-image: url("./img/island/island_mono/sushi4.png");
 }
 
-.logo {
+.dinner {
   position: absolute;
-  width: 60vh;
-  height: 28vh;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url("./img/bg/logo.svg");
-  background-size: cover;
-  animation: logo 2s infinite alternate;
-  text-indent: 101%;
-  /*使文字的縮排增多至超出區域*/
-  white-space: nowrap;
-  /*使文字不能進行換行，避免字數過多時自動換行*/
-  overflow: hidden;
-  /*transition: 1s;*/
+  /* width: 60vh; */
+  /* height: 60vh; */
+  width:20rem;
+  height:20rem;
+  /* top: 5%; */
+  /* left: 20%; */
+  top:10%;
+  left: 60%;
+  /* border: 1px solid; */
 }
 
-.fly {
+.broccoli,
+.carrot,
+.salmon {
   position: absolute;
-  width: 47.6%;
-  height: 52.6%;
-  top: -70vh;
-  left: 47.5%;
-  transform: translate(-50%);
-  background-image: url("./img/sky/fly.png");
   background-size: cover;
-  animation: fly2 3s linear;
+}
+
+.broccoli {
+  width: 43%;
+  height: 40%;
+  top: 0;
+  left: 35%;
+  background-image: url("./img/sea/broccoli.png");
+}
+
+.carrot {
+  width: 33%;
+  height: 30%;
+  top: 35%;
+  left: 10%;
+  background-image: url("./img/sea/carrot.png");
+}
+
+.salmon {
+  width: 50%;
+  height: 39%;
+  top: 40%;
+  left: 52%;
+  background-image: url("./img/sea/salmon.png");
+}
+
+
+
+/*---s2---*/
+
+.container {
+  position: absolute;
+  /* width: 100%; */
+  width: 50%;
+  /* height: 25%; */
+  height: 20%;
+  left:30%;
+  /* left: 0; */
+  /* border: 1px solid; */
+  display: flex;
+}
+
+.container.c1 {
+  top: 0;
+}
+
+.container.c2 {
+  top: 25%;
+  /* right:5%; */
+  /* float: right; */
+}
+
+.container.c3 {
+  top: 50%;
+}
+
+.container.c4 {
+  top: 75%;
+  /* right:5%; */
+  /* float: right; */
+}
+
+.c_content{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+.icon {
+  /* position: absolute; */
+  /* width: 60vh; */
+  /* height: 52vh; */
+  /* width:20rem; */
+  /* height:18rem; */
+  width:40%;
+  /* top: 0%; */
+  /* background-size: cover; */
+  /* opacity: 0.15; */
+}
+
+.icon img{
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  /* position: absolute; */
+  /* width: 15%; */
+  width: 50%;
+  /* height: 15%; */
+  padding: 1rem 3rem;
+  margin-top: 10%;
+  /* bottom: 10%; */
+  /* margin-left: 3vh; */
+  background-image: url("./img/bg/menu_bg.jpg");
+  /* font-size: 3vh; */
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #f0ebd8;
+  text-align: center;
+  /* line-height: 250%; */
+  /* box-shadow: 2vh 2vh 2vh rgba(0, 0, 0, 0.15); */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 50vh;
+  transition: 0.25s ease;
+  /* animation: btn 2s infinite; */
+}
+
+@keyframes btn {
+  0% {
+    transform: scale(1.1);
+  }
+}
+
+.btn:hover {
+  /* box-shadow: 0vh 0vh 0vh rgba(0, 0, 0, 0.15); */
+  color: #ffdb02;
+}
+
+
+/*---s3---*/
+
+.rock {
+  position: absolute;
+  /* width: 220vh; */
+  /* height: 110vh; */
+  width: 100%;
+  /* height:50%; */
+  left: 0;
+  bottom: 1%;
+  /* background-image: url("./img/sea/rock.png"); */
+  /* background-size: cover; */
+  /* opacity: 0.5; */
+  opacity: 0.75;
 }
 
 .sand {
   position: absolute;
-  width: 220vh;
-  height: 15vh;
+  /* width: 220vh; */
+  width:100%;
+  /* height: 15vh; */
   left: 0;
   bottom: 0;
-  background-image: url("./img/sea/sand.png");
-  background-size: cover;
+  /* background-image: url("./img/sea/sand.png"); */
+  /* background-size: cover; */
+}
+
+.sand img{
+  width:100%;
+  height: auto;
+  transform: translatey(10px);
 }
 
 .copyright {
   position: absolute;
   width: 50%;
   height: 4%;
-  bottom: 1%;
+  /* bottom: 1%; */
+  bottom: 3%;
   left: 50%;
   transform: translate(-50%);
   text-align: center;
   color: #f0ebd8;
-  font-size: 1vh;
+  /* font-size: 1vh; */
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
   /*border:1px solid;*/
 }
 
@@ -844,70 +884,35 @@ body {
 
 .game {
   position: absolute;
-  width: 62vh;
-  height: 90vh;
+  width:50%;
+  height: 100%;
   bottom: 5%;
-  left: 75%;
-  transform: translate(-50%);
-  /*border:1px solid;*/
-}
-
-.iron,
-.egg {
-  position: absolute;
   left: 50%;
-  transform: translate(-50%);
-  background-size: cover;
-}
-
-.iron {
-  width: 100%;
-  height: 40%;
-  bottom: 0;
-  background-image: url("./img/sea/tower.png");
-}
-
-.game_talk {
-  position: absolute;
-  width: 15%;
-  height: 3%;
-  top: 82.5%;
-  left: 52.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.game_bubble {
-  width: 100%;
-  height: auto;
-  transform: scaleX(-1);
-}
-
-.game_word {
-  color: #7eabb1;
-  font-size: 2.5vh;
-  letter-spacing: 0.15em;
-  font-weight: 700;
+  /* border:1px solid; */
 }
 
 .egg {
-  width: 90%;
-  height: 45%;
-  bottom: 35%;
-  background-image: url("./img/sea/egg.png");
+  position: absolute;
+  top:15%;
+  left: 5%;
+}
+
+.egg img{
+  width:100%;
+  height: auto;
+  /* border: 1px solid; */
 }
 
 .egg_btn {
   position: absolute;
-  width: 20%;
-  height: 27%;
+  width:10rem;
+  height: 10rem;
   left: 50%;
   bottom: 15%;
   transform: translate(-50%, -50%);
-  background: #f0ebd8;
+  background-image: url("./img/bg/loading_bg.jpg");
   border-radius: 50%;
-  box-shadow: 1vh 1vh 5vh #94d0d3;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   animation: shoo 2s infinite ease-in-out;
 }
@@ -921,7 +926,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #f0ebd8;
-  box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes shoo {
@@ -938,78 +943,7 @@ body {
   }
 }
 
-.sns_content {
-  position: absolute;
-  top: 85%;
-  left: 52.5%;
-  width: 10%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.sns_btn {
-  width: 7vh;
-  height: 7vh;
-  top: 0;
-  background: rgba(240, 235, 216, 0.25);
-  border-radius: 50%;
-  transition: 0.5s;
-}
-
-.sns_btn:hover {
-  background: #ffdb02;
-}
-
-.sns_btn:active {
-  transform: scale(1.1);
-}
-
-#buttons_all {
-  position: fixed;
-  width: 7vh;
-  height: 7vh;
-  bottom: 3%;
-  right: 1%;
-}
-
-#gotop {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(240, 235, 216, 0.25);
-  top: 10%;
-  /*這個要開不然還沒滾卷軸就會出現*/
-  display: none;
-  left: 50%;
-  transform: translate(-50%);
-  border-radius: 50%;
-  box-shadow: 0 0 3vh rgba(0, 0, 0, 0.15);
-}
-
-#gotop:hover {
-  background: #f0ebd8;
-  transition: 0.5s;
-}
-
-#gotop:active {
-  background: #f0ebd8;
-  transition: 0.5s;
-  transform: translate(-50%) scale(1.2);
-}
-
-#gotop,
-.sns_btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn_img {
-  width: 50%;
-  height: auto;
-  opacity: 0.25;
-}
+/*---modal---*/
 
 .modal {
   opacity: 0;
@@ -1071,7 +1005,6 @@ body {
   }
 }
 
-/*modal打開後的空間*/
 .modal__inner,
 .modal__inner_food {
   position: absolute;
@@ -1102,10 +1035,10 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
 }
 
-/*關閉modal按鈕*/
 .modal__close {
   position: absolute;
   right: 5%;
@@ -1123,7 +1056,7 @@ body {
   height: 15%;
   left: 50%;
   top: 0;
-  background: rgba(0, 0, 0, 0.15);
+  background: #f0ebd8;
   display: block;
   transform: rotate(45deg);
 }
@@ -1137,80 +1070,136 @@ body {
   transform: rotate(-45deg);
 }
 
+.game_content{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .game_logo {
-  position: absolute;
   width: auto;
-  height: 20%;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%);
-  filter: grayscale(1) invert(1);
+  height: 60%;
+  border-radius: 10px;
 }
 
 .game_nav {
-  position: absolute;
   width: 60%;
-  height: 40%;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%);
+  height: 20%;
   list-style: none;
   color: #f0ebd8;
-  font-size: 3vh;
   letter-spacing: 0.15em;
-  margin: 1vh;
+  line-height: 180%;
 }
 
-.game_li {
-  padding: 1vh;
+.g_link_area{
+  width: 80%;
+  height:20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .game_link {
-  position: absolute;
-  width: 50%;
-  height: 8vh;
-  left: 50%;
-  transform: translate(-50%);
-  background: rgba(0, 0, 0, 0.7);
+  width: 45%;
+  height: 3.25rem;
+  background-image: url("./img/bg/menu_bg.jpg");
   text-decoration: none;
   color: #f0ebd8;
-  border-radius: 2vh;
-  box-shadow: 0 0 3vh rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.game_link.g1 {
-  bottom: 22.5%;
-}
-
-.game_link.g2 {
-  bottom: 10%;
-}
-
 .game_icon {
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  top: 50%;
-  left: 25%;
-  transform: translate(-50%, -50%);
+  width: auto;
+  height:1.1rem;
   filter: invert(1);
-  opacity: 0.5;
 }
 
 .game_word {
+  font-size: 1.1rem;
+  color: #f0ebd8;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+/*---gotop&sns---*/
+
+#buttons_all {
+  position: fixed;
+  width:3rem;
+  height: 3rem;
+  bottom: 3%;
+  right: 1%;
+}
+
+#gotop {
   position: absolute;
-  width: 80%;
-  height: 4.5vh;
-  top: 50%;
-  left: 65%;
-  transform: translate(-50%, -50%);
-  font-size: 3vh;
-  line-height: 1.5;
-  letter-spacing: 0.15em;
-  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  background: rgba(240, 235, 216, 0.25);
+  top: 10%;
+  /*這個要開不然還沒滾卷軸就會出現*/
+  display: none;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  box-shadow: 0 0 3vh rgba(0, 0, 0, 0.15);
+}
+
+#gotop:hover {
+  background: #f0ebd8;
+  transition: 0.5s;
+}
+
+#gotop:active {
+  background: #f0ebd8;
+  transition: 0.5s;
+  transform: translate(-50%) scale(1.2);
+}
+
+#gotop,
+.sns_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_img {
+  width: 50%;
+  height: auto;
+  opacity: 0.25;
+}
+
+.sns_content {
+  position: absolute;
+  top: 85%;
+  left: 52.5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sns_btn {
+  width: 3rem;
+  height:3rem;
+  top: 0;
+  background: rgba(240, 235, 216, 0.25);
+  border-radius: 50%;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+.sns_btn:hover {
+  background: #ffdb02;
+}
+
+.sns_btn:active {
+  transform: scale(1.1);
 }
 
 
