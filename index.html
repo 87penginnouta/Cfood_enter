@@ -5,15 +5,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="海鮮大揭密，圖文x遊戲x社群，從辨識、挑貨技巧、食材處理至相關美食，一起來場水中探險。本網站為嘉義大學數位學習設計與管理學系110級畢業專題。">
+  <meta name="description" content="海鮮大揭密，圖文x遊戲x社群，從辨識、挑貨技巧、食材處理至相關美食，一起來場水中探險。讓我們一起跟蔚蔚從餐桌回溯，認識我們的食魚文化吧！本網站為嘉義大學數位學習設計與管理學系110級畢業專題。">
   <meta name="author" content="味補鮮知">
   <meta name="robots" content="index, follow" />
-  <meta property="og:image" content="./img/bg/og72.jpg"/>
-  <title>味補鮮知 - 海鮮的秘密 | 你不可不知的台灣海鮮食魚文化</title>
-  <link rel="icon" href="./img/bg/favicon1.ico">
+  <meta property="og:image" content="./img/bg/og72.jpg" />
+  <title>味補鮮知 - 海鮮的秘密 | 台灣食魚文化大揭密</title>
+  <link rel="icon" href="./img/bg/f.svg">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Monda&amp;family=Noto+Sans+TC&amp;display=swap">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./rwd.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -36,7 +37,6 @@
   </div>
 
   <div id="bg">
-    <div class="rock"></div>
     <div id="section1">
       <div class="star s_right" data-0="top:4%; right:0%;" data-300="top:50%; right:-20%;"></div>
       <div class="star s_left" data-0="top:4%; left:0%;" data-300="top:50%; left:-20%;"></div>
@@ -65,9 +65,9 @@
         data-2420="top:370%; left:30%; transform:rotate(10deg) scaleX(1);"
         data-2500="top:380%; left:100%; transform:rotate(0deg) scaleX(1);"></div>
       <div class="under_sea" data-0="top:150%; height: 350%;" data-600="top:100%; height: 400%;">
-        <div class="info">嘿！我們昨晚<span class="highlight">吃了什麼</span>？<br><br>
-          <span
-            class="content">你或許記得綠色的是花椰菜，<br>紅色的是胡蘿蔔，<br>不過，盤子裡的魚究竟叫什麼呀？<br><br>哎呀，想不出答案也沒關係，<br>讓我們一起跟蔚蔚從餐桌回溯，<br>認識我們的食魚文化吧！</span>
+        <div class="info open_info">嘿！我們昨晚<span class="highlight">吃了什麼</span>？<br><br>
+          <h1 class="content open_content">
+            你或許記得綠色的是花椰菜，<br>紅色的是胡蘿蔔，<br>不過，盤子裡的魚究竟叫什麼呀？<br><br>哎呀，想不出答案也沒關係，<br>讓我們一起跟蔚蔚從餐桌回溯，<br>認識我們的<span class="highlight">食魚文化</span>吧！</h1>
         </div>
         <div class="dinner">
           <div class="broccoli"></div>
@@ -112,67 +112,79 @@
     </div>
 
     <div id="section2">
-      <div class="container c1">
-        <div class="info_stop i_left">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span
-            class="highlight_number">&ensp;01</span><br>別用觸腕旋轉我&emsp;&emsp;&emsp;&emsp;<br><span
-            class="content">「頭足類表示花枝亂站。」</span></div>
-        <a href="https://87penginnouta.github.io/Cfood_Cephalopoda/">
-          <div class="btn b_left">MORE</div>
-        </a>
-        <div class="icon i1" data-0="opacity:0.15;" data-950="opacity:0.15;" data-1000="opacity:1;"></div>
+      <div class="container c1" data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
+        <div class="icon i1">
+          <img src="./img/sea/item1_light.png" alt="">
+        </div>
+        <div class="c_content">
+          <div class="info_stop i_left">
+            <span class="highlight_stop">STOP</span><span class="highlight_number">&ensp;01</span><br>別用觸腕旋轉我！<br>
+          </div>
+          <span class="content">「頭足類表示花枝亂站。」</span>
+          <a class="btn b_left" href="https://87penginnouta.github.io/Cfood_Cephalopoda/">READ MORE</a>
+        </div>
       </div>
-      <div class="container c2">
-        <div class="info_stop i_right">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span
-            class="highlight_number">&ensp;02</span><br>天黑請閉殼&emsp;&emsp;&emsp;&emsp;<br><span
-            class="content">「要貝類閉嘴……很不禮貌。」</span></div>
-        <a href="https://87penginnouta.github.io/Cfood_Shellfish/">
-          <div class="btn b_right">MORE</div>
-        </a>
-        <div class="icon i2" data-0="opacity:0.15;" data-1350="opacity:0.15;" data-1400="opacity:1;"></div>
+      <div class="container c2" data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
+        <div class="icon i2">
+          <img src="./img/sea/item2_light.png" alt="">
+        </div>
+        <div class="c_content">
+          <div class="info_stop i_left">
+            <span class="highlight_stop">STOP</span><span class="highlight_number">&ensp;02</span><br>天黑請閉殼！<br>
+          </div>
+          <span class="content">「要貝類閉嘴……很不禮貌。」</span>
+          <a class="btn b_left" href="https://87penginnouta.github.io/Cfood_Shellfish/">READ MORE</a>
+        </div>
       </div>
-      <div class="container c3">
-        <div class="info_stop i_left">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span
-            class="highlight_number">&ensp;03</span><br>鰭士團招募中&emsp;&emsp;&emsp;&emsp;<br><span
-            class="content">「我們會定期舉辦魚類甩尾大賽。」</span></div>
-        <a href="https://87penginnouta.github.io/Cfood_Fish/">
-          <div class="btn b_left">MORE</div>
-        </a>
-        <div class="icon i3" data-0="opacity:0.15;" data-1750="opacity:0.15;" data-1800="opacity:1;"></div>
+      <div class="container c3" data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
+        <div class="icon i3">
+          <img src="./img/sea/item3_light.png" alt="">
+        </div>
+        <div class="c_content">
+          <div class="info_stop i_left">
+            <span class="highlight_stop">STOP</span><span class="highlight_number">&ensp;03</span><br>鰭士團招募中！<br>
+          </div>
+          <span class="content">「我們會定期舉辦魚類甩尾大賽。」</span>
+          <a class="btn b_left" href="https://87penginnouta.github.io/Cfood_Fish/">READ MORE</a>
+        </div>
       </div>
-      <div class="container c4">
-        <div class="info_stop i_right">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span
-            class="highlight_number">&ensp;04</span><br>發出可剝的聲音&emsp;&emsp;&emsp;<br><span
-            class="content">「蝦類覺得宇宙害羞。」</span></div>
-        <a href="https://87penginnouta.github.io/Cfood_Shrimp/">
-          <div class="btn b_right">MORE</div>
-        </a>
-        <div class="icon i4" data-0="opacity:0.15;" data-2150="opacity:0.15;" data-2200="opacity:1;"></div>
-      </div>
+      <div class="container c4" data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
+        <div class="icon i4">
+          <img src="./img/sea/item4_light.png" alt="">
+        </div>
+        <div class="c_content">
+          <div class="info_stop i_left">
+            <span class="highlight_stop">STOP</span><span class="highlight_number">&ensp;04</span><br>發出可剝的聲音！<br>
+          </div>
+          <span class="content">「蝦類覺得宇宙害羞。」</span>
+          <a class="btn b_left" href="https://87penginnouta.github.io/Cfood_Shrimp/">READ MORE</a>
+        </div>
+      </div>      
     </div>
 
     <div id="section3">
+      <div class="rock">
+        <img src="./img/sea/rock.png" alt="">
+      </div>
       <div class="game">
-        <div class="egg">
+        <div class="egg" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <img src="./img/sea/egg.png" alt="">
           <label class="modal_btn" for="modal-1">
             <div class="egg_btn"></div>
           </label>
         </div>
-        <div class="iron"></div>
       </div>
       <div class="grass"></div>
-      <div class="sand"></div>
+      <div class="sand">
+        <img src="./img/sea/sand.png" alt="">
+      </div>
       <div class="copyright">
-        <p>©&ensp;嘉義大學數位系110級畢業專題&emsp;味補鮮知&ensp;-&ensp;海鮮的秘密</p>
+        <p>©嘉義大學數位系110級畢業專題味補鮮知-海鮮的秘密</p>
       </div>
-      <div class="info_final i_left">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span
-          class="highlight_number">&ensp;Final</span><br>鮮之塔的食客&emsp;&emsp;&emsp;&emsp;<br><span
-          class="content">「用小遊戲來一決勝負吧！」</span><br><br><span
-          class="content">經過一場海底之旅，<br>想必你也知道不少海鮮的秘密了吧？<br><br>旅行的最後，<br>我們準備了一場愉快的小測驗，<br>按下扭蛋機的按鈕，<br>證明你也是偉大鮮知的一員吧！</span>
+      <div class="info open_info"><span class="highlight">鮮之塔</span>的食客<br><br>
+        <h1 class="content open_content">
+          經過一場海底之旅，<br>想必你也知道不少海鮮的秘密了吧？<br><br>旅行的最後，<br>我們準備了一場愉快的小測驗，<br>按下<span class="highlight">扭蛋機</span>的按鈕，<br>證明你也是偉大鮮知的一員吧！</h1>
       </div>
-    </div>
-    <div class="game_talk">
-      <img class="game_bubble" src="./img/sea/bubble@2x.png" alt="遊戲_對話框">
-      <span class="game_word">點我下載！</span>
     </div>
   </div>
 
@@ -183,28 +195,25 @@
       <div class="modal__inner">
         <div class="modal_inner_bg"></div>
         <label class="modal__close" for="modal-1"></label>
-        <img class="game_logo"
-          src="./img/sea/game_logo.png" alt="鮮之塔的食客">
-        <ul class="game_nav">
-          <li class="game_li">遊戲類型：冒險/劇情向/猜題遊戲</li>
-          <li class="game_li">遊玩時間：約10至15分鐘</li>
-        </ul>
-        <a class="game_link g1"
-          href="https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21108&authkey=AI3Ae6mlR8sNeyM">
-          <div class="game_content">
-            <img class="game_icon" src="./img/windows.svg"
-              alt="鮮之塔的食客_windows版">
-            <div class="game_word">&emsp;Windows版下載</div>
+        <div class="game_content">
+          <img class="game_logo" src="./img/sea/game_logo.jpg" alt="鮮之塔的食客">
+          <ul class="game_nav">
+            <li class="game_li content">遊戲類型：冒險/劇情向/猜題遊戲</li>
+            <li class="game_li content">遊玩時間：約10至15分鐘</li>
+          </ul>
+          <div class="g_link_area">
+            <a class="game_link g1"
+              href="https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21108&authkey=AI3Ae6mlR8sNeyM">
+              <img class="game_icon" src="./img/windows.svg" alt="鮮之塔的食客_windows版">
+              <div class="game_word">&emsp;Windows版下載</div>
+            </a>
+            <a class="game_link g2"
+              href="https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21107&authkey=AL6q2Vc9strMiXY">
+              <img class="game_icon" src="./img/apple.svg" alt="鮮之塔的食客_MacOS版">
+              <div class="game_word">&emsp;MacOS版下載</div>
+            </a>
           </div>
-        </a>
-        <a class="game_link g2"
-          href="https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21107&authkey=AL6q2Vc9strMiXY">
-          <div class="game_content">
-            <img class="game_icon" src="./img/apple.svg"
-              alt="鮮之塔的食客_MacOS版">
-            <div class="game_word">&emsp;MacOS版下載</div>
-          </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -251,16 +260,14 @@
           </a>
           <div class="menu_web w_line"><span class="m_span"></span></div>
         </div>
-        <img class="menu_img" src="./img/sea/submarine.png"
-          alt="味補鮮知_選單">
+        <img class="menu_img" src="./img/sea/submarine.png" alt="味補鮮知_選單">
       </div>
       <div class="sns_content s_menu">
         <a class="sns_btn s_fb" href="https://www.facebook.com/Cfood.secret" target="_blank">
           <img class="btn_img" src="./img/facebook.svg" alt="味補鮮知_facebook">
         </a>
         <a class="sns_btn s_ig" href="https://www.instagram.com/fishkw.2020/" target="_blank">
-          <img class="btn_img" src="./img/ins.svg"
-            alt="味補鮮知_instagram">
+          <img class="btn_img" src="./img/ins.svg" alt="味補鮮知_instagram">
         </a>
       </div>
     </span>
@@ -279,8 +286,11 @@
       </div>
     </div>
   </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./script.js"></script>
 
 </body>
