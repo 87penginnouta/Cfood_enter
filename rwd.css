@@ -29,7 +29,7 @@
 @media (max-width: 540px) {
     #bg {
         width: 100vw;
-        height: 500vh;
+        height: 500dvh;
     }
 
     .sea {
@@ -59,10 +59,10 @@
     }
 
     .dinner {
-        left: 10%;
+        left: 15%;
         top: 2.5%;
-        width:15rem;
-        height: 15rem;
+        width:12rem;
+        height: 12rem;
     }
 
     .info_final .highlight_number {
