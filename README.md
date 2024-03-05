@@ -63,7 +63,7 @@
 
 `下載連結（點擊後將自動下載）`
 
-[windows版 172MB](https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21108&authkey=AI3Ae6mlR8sNeyM)   |   [MacOs版 539MB](https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21107&authkey=AL6q2Vc9strMiXY)
+[windows版](https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21108&authkey=AI3Ae6mlR8sNeyM)  172MB |   [MacOs版](https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21107&authkey=AL6q2Vc9strMiXY)  539MB
 
 
 .
