@@ -1,16 +1,16 @@
-# 🐟味補鮮知 - 海鮮的秘密 
+# 🐟 Cfood_enter | 味補鮮知 - 海鮮的秘密 
 
 由女孩**蔚蔚**意外展開的海底旅程，引導使用者認識台灣常見的頭足、貝、魚及蝦類海鮮。想知道它們「如何分辨」、有什麼「挑選要點」、食材「處理步驟」，以及有什麼「相關美食」嗎？這裡就是你的最佳知識庫！
 
 .
 
 
-### 👀 Youtube Overview
+### 👀 Youtube Overview | 影片介紹
 
 [![味補鮮知_介紹影片](https://img.youtube.com/vi/YecnFGFttpQ/0.jpg)](https://www.youtube.com/watch?v=YecnFGFttpQ)
 
 
-### 👉緣起
+### 👉 Introduction | 緣起
 
 身處漁產豐富的海島國家，海鮮料理是大家餐桌上的常客。然而看見這些佳餚時，你是否也說不出它的名稱，只記得那是「媽媽的味道」？
 
