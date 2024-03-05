@@ -46,7 +46,22 @@
 
 ### 🏆鮮之塔的食客：海鮮遊戲大會考
 
-![味補鮮知_網站介紹](./img/read_me/Cfood_06.jpg)
+![味補鮮知_網站介紹](./img/read_me/Cfood_05.jpg)
+
+`劇情介紹`
 
 看完介紹網站，想不想測試你對海鮮們的熟悉程度呢？在這項文字冒險遊戲中，玩家將跟隨貪吃的主角「海戴芽」勇闖鮮之塔，答題擊敗怪人關主們取得獎勵，選擇不同的對話選項，也將推進不同劇情，讓你在遊玩過程中，除了大呼角色屬性要素過多，也能無痛補充海鮮小知識！
+
++ 遊戲類型：冒險/劇情向/猜題遊戲
+
++ 遊玩時間：約10至15分鐘
+
++ [至粉專觀看詳細介紹](https://www.facebook.com/Cfood.secret/posts/pfbid02E6S4mD9YA5PuSyvShsu6v9R3jPMYwnAqKqKBfNPmMLX97J1fZpq4q3LdeeUt7VJnl)
+
+`下載連結（點擊後將自動下載）`
+
+[windows版](https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21108&authkey=AI3Ae6mlR8sNeyM)
+
+[MacOs版]([https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21108&authkey=AI3Ae6mlR8sNeyM](https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21107&authkey=AL6q2Vc9strMiXY)https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21107&authkey=AL6q2Vc9strMiXY)
+
 
