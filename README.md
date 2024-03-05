@@ -86,6 +86,8 @@
 
 [鮮不說了ㄅㄅ](https://store.line.me/stickershop/product/13630690/zh-Hant)
 
+.
 
+### 🙇Thanks for scrolling!
 
-
+.
