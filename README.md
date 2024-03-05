@@ -31,6 +31,7 @@
 
 互動方面，則使用視差滾動動畫與動態資料庫AOS.js，讓頁面滑動時更生動活潑。使用者於前導劇情後，分別進入「頭足類」、「貝類」、「魚類」與「蝦類」的介紹頁面，於各章節小精靈的引導下，逐一認識選、買、洗、煮等過程。
 
+.
 
 `內容呈現`
 
@@ -58,6 +59,8 @@
 
 + 遊玩時間：約10至15分鐘
 
+.
+
 `下載連結（點擊後將自動下載）`
 
 [windows版](https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21108&authkey=AI3Ae6mlR8sNeyM)   |   [MacOs版](https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21107&authkey=AL6q2Vc9strMiXY)
@@ -76,6 +79,8 @@
 `社群平台`
 
 [味補鮮知_facebook](https://www.facebook.com/Cfood.secret)    |   [味補鮮知_instagram](https://www.instagram.com/fishkw.2020/)
+
+.
 
 `line貼圖購買連結`
 
