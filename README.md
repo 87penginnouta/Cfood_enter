@@ -48,10 +48,6 @@
 
 ![味補鮮知_網站介紹](./img/read_me/Cfood_05.jpg)
 
-`下載連結（點擊後將自動下載）`
-
-[windows版](https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21108&authkey=AI3Ae6mlR8sNeyM)   |   [MacOs版](https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21107&authkey=AL6q2Vc9strMiXY)
-
 `劇情介紹`
 
 看完介紹網站，想不想測試你對海鮮們的熟悉程度呢？在這項文字冒險遊戲中，玩家將跟隨貪吃的主角「海戴芽」勇闖鮮之塔，答題擊敗怪人關主們取得獎勵，選擇不同的對話選項，也將推進不同劇情，讓你在遊玩過程中，除了大呼角色屬性要素過多，也能無痛補充海鮮小知識！
@@ -62,6 +58,11 @@
 
 + 遊玩時間：約10至15分鐘
 
+`下載連結（點擊後將自動下載）`
+
+[windows版](https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21108&authkey=AI3Ae6mlR8sNeyM)   |   [MacOs版](https://onedrive.live.com/download?cid=798697C7AA5B4329&resid=798697C7AA5B4329%21107&authkey=AL6q2Vc9strMiXY)
+
+
 .
 
 ### 🔥社群與貼圖行銷
@@ -69,6 +70,16 @@
 ![味補鮮知_社群介紹](./img/read_me/Cfood_06.jpg)
 
 ![味補鮮知_貼圖介紹](./img/read_me/Cfood_07.jpg)
+
+除了網站，我們也設計以海鮮們為主角的貼心問候貼圖，並經營粉絲專頁等社群平台，在每週四21:00更新網站上沒提到的海鮮小知識！如果你想跟海鮮們鮫流鮫流，成為海鮮界的魔幻大師，歡迎按讚追蹤「味補鮮知」，同場加映Ig搜尋「味補鮮知 - 海鮮的秘密」。
+
+`社群平台`
+
+[味補鮮知_facebook](https://www.facebook.com/Cfood.secret)    |   [味補鮮知_instagram](https://www.instagram.com/fishkw.2020/)
+
+`line貼圖購買連結`
+
+[鮮不說了ㄅㄅ](https://store.line.me/stickershop/product/13630690/zh-Hant)
 
 
 
